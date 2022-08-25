@@ -1,0 +1,1866 @@
+/*-index-(4-354)-*/ /*-primaria-(356-521)-*/ /*-secundaria-(523-664)-*/ /*-nosotros-(666-780)-*/ /*-contacto-(784-850)-*/ /*-footer-(852-898)-*/ /* mobile de 320px a 425px (953-1329)*/ /* - mobile de 425px a 768px(1334-1659)-*/ /* - mobile de 768px a 1440px(1660 -1860)-*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 7px rgba(58, 58, 58, 0);
+    font-size: 2.5rem;
+    font-weight: 650;
+    color: rgb(22, 101, 170);
+    text-align: center;
+    margin: 4rem;
+}
+
+h4 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
+    font-size: 2rem;
+    font-weight: 650;
+    color: rgb(22, 101, 170);
+    text-align: center;
+    margin: 4rem;
+}
+
+/*-diseño de la página inicio-*/
+
+/* navbar*/
+
+header {
+    width: 100vw;
+    background-color: #faf6f0;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #faf6f0;
+    width: 100vw;
+    padding-right: 10px;
+    z-index: 1;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.logo__nav {
+    display: flex;
+    padding-left: 10px;
+}
+
+.logo1 {
+    width: 50px;
+    z-index: 2;
+    align-items: center;
+}
+
+header ul li a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: rgb(23, 42, 119);
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    padding: 4px 0;
+    transition: 0.7s ease-out;
+}
+
+header ul li a:hover {
+    border-bottom: 1px solid rgb(23, 42, 119);
+}
+
+/* fin de navbar*/
+
+/* primera seccion */
+
+.primera-seccion-inicio {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)),url('../Imágenes/portada.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#primer-contenido-inicio p {
+    text-transform: capitalize;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 7px 7px 7px black;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#primer-contenido-inicio h1 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px black;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* fin de primera seccion */
+
+/* segunda seccion */
+
+.segunda-seccion-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.card1-inicio {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card1 {
+    background-color: rgba(22, 21, 105, 0.082);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem;
+    padding: 2rem;
+    width: 20vw;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card1:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card-body-inicio {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title-inicio {
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    color: rgb(23, 42, 119);
+    text-align: center;
+    padding: 1.5rem 0rem;
+}
+
+.card-body-inicio p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    width: 20vw;
+}
+
+.card-body-inicio a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    background: rgb(216, 224, 255);
+    border: 1px solid rgb(23, 42, 119);
+    color: rgb(23, 42, 119);
+    padding: 1.25rem;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    transition: all 400ms ease;
+}
+
+.card-body-inicio a:hover {
+    background: rgb(23, 42, 119);
+    color: #faf6f0;
+}
+
+/*fin de segunda seccion*/
+
+/* tercera seccion */
+
+.tercera-seccion-inicio {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/historia.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "tercer-contenido-inicio tercer-contenido-inicio"
+    "seccion-izq-historia seccion-der-historia "
+    "seccion-izq-historia seccion-der-historia "
+    "seccion-izq-historia seccion-der-historia "
+    ;
+}
+
+.historia {
+    color: #ffffff;
+    text-shadow: 7px 7px 7px black;
+}
+
+.tercer-contenido-inicio{
+    grid-area: tercer-contenido-inicio;
+}
+
+#seccion-der-historia {
+    grid-area: seccion-der-historia;
+}
+
+.logo3 {
+    padding-left: 16rem;
+    width: 50%;
+}
+
+#seccion-izq-historia {
+    background-color: #f3dfbf91;
+    border-radius: 6px;
+    box-shadow: inset;
+    grid-area: seccion-izq-historia;
+    grid-row: auto;
+    margin-left: 2rem;
+}
+
+#seccion-izq-historia p{
+    text-transform: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 40px;
+    color: rgb(23, 42, 119);
+    text-align: justify;
+    font-size: large;
+    font-weight: 500;
+    padding: 3rem;
+}
+
+/*fin de tercera seccion*/
+
+/*cuarta seccion*/
+
+.carousel-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 0.9% ;
+    margin-bottom: 20px;
+    margin-left: 0.9%;
+}
+
+.carousel-item {
+    overflow: visible;
+}
+
+.d-block {
+    width: 32vw;
+    transition: 0.7s;
+    object-fit: cover;
+}
+
+.d-block:hover {
+    transform: scale(1.1);
+}
+
+/* fin de cuarta seccion */
+
+/* quinta seccion */
+
+.quinta-seccion-inicio {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/contacto.jpg') no-repeat center/cover;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "quinto-contenido-inicio quinto-contenido-inicio"
+    "seccion-izq-contacto seccion-der-contacto "
+    "seccion-izq-contacto seccion-der-contacto "
+    "seccion-izq-contacto seccion-der-contacto "
+    ;
+    justify-items: center;
+}
+
+.quinto-contenido-inicio {
+    grid-area: quinto-contenido-inicio;
+}
+
+#seccion-der-contacto {
+    width: 90%;
+    grid-area: seccion-der-contacto;
+    grid-row: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion-izq-contacto {
+    grid-area: seccion-izq-contacto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    width: 90%;
+    grid-row: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+#seccion-izq-contacto p{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.legen {
+    text-align: center;
+}
+
+.field {
+    width: 16rem;
+}
+
+.nombre {
+    padding-left: 15rem;
+    padding-top: 1rem;
+}
+
+.email {
+    padding-left: 15rem;
+}
+.email2 {
+    padding-right: 6rem;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.mens {
+    padding-left: 15rem;
+}
+
+textarea#texto {
+    margin-left: 15rem;
+    min-width: 23rem;
+    max-width: 23rem;
+    min-height: 10rem;
+    max-height: 10rem;
+    
+}
+
+.enviar {
+    background-color: rgb(33, 68, 206);
+    width: 7%;
+    color: #faf6f0;
+    border-color: #faf6f0;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: 'montserrat', sans-serif;
+    font-size: medium;
+    position: absolute;
+    margin-top: 8rem;
+    margin-left: 40rem;
+}
+
+/*fin de quinta seccion*/
+
+/*-fin de diseño de la pagina inicio-*/
+
+/*--diseño de la pagina primaria--*/
+
+/* primera seccion */
+
+.primera-seccion-primaria {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/primaria.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#primer-contenido-primaria>p {
+    text-transform: capitalize;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 7px 7px 7px black;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#primer-contenido-primaria>h1 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px black;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* fin de primera seccion */
+
+/* segunda seccion */
+
+.segunda-seccion-primaria {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.segunda-seccion-primaria p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#seccion-izq-pri {
+    width: 30%;
+}
+
+#seccion-der-pri {
+    width: 30%;
+}
+
+.tur-man{
+    padding-top: 1.5rem;
+    color: #ffffff;
+    text-shadow: 2.5px 2.5px black;
+    
+}
+
+.tur-hor {
+    color: #ffffff;
+    text-shadow: 2.5px 2.5px black;
+}
+
+.horario-mañana {
+    padding-bottom: 2rem;
+}
+
+.text-mañana{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.tm {
+    background: linear-gradient(rgba(71, 98, 207, 1), rgba(243, 223, 191, 0.7)), url('../Imágenes/turno\ mañana.jpg') no-repeat center/cover;
+    color: rgb(243, 223, 191);
+    text-shadow: 1px 1px black;
+    border-radius: 6px;
+    font-size:larger;
+    text-align: center;
+    opacity: 0.9;
+    box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400mx ease;
+}
+
+.tm:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.tt {
+    background: linear-gradient(rgb(71, 98, 207, 1), rgba(243, 223, 191, 0.7)), url('../Imágenes/turno\ tarde.jpg') no-repeat center/cover;
+    color: rgb(243, 223, 191);
+    text-shadow: 1px 1px black;
+    border-radius: 6px;
+    font-size: larger;
+    text-align: center;
+    opacity: 0.9;
+    box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400mx ease;
+}
+
+.tt:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+/* fin de segunda seccion */
+
+/* tercera seccion */
+
+.tercera-seccion-primaria {
+    display: flex;
+    flex-direction: row;
+}
+
+#seccion-izq-act {
+    background-color: #b0d0f5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#seccion-der-act {
+    background-color: #b0d0f5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actividades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mas-actividades {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-act {
+    width: 80%;
+    padding: 1.5rem;
+}
+
+.actividades p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    width: 80%;
+    padding: 2rem;
+}
+
+.mas-actividades a{
+    text-decoration: none;
+    padding: 2px;
+    margin: 1rem 1rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    border-radius: 4px;
+    background: rgb(216, 224, 255);
+    border: 1px solid rgb(23, 42, 119);
+    color: rgb(23, 42, 119);
+    padding: 1rem;
+    margin-top: 2.5rem;
+    transition: all 400ms ease;
+}
+
+.mas-actividades a:hover {
+    background: rgb(23, 42, 119);
+    color: #faf6f0;
+}
+
+/* fin de tercera seccion */
+
+/*--fin de diseño de la pagina primaria--*/
+
+/*---diseño de la pagina secundaria---*/
+
+/* primera seccion */
+
+.primera-seccion-secundaria {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/secundaria.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#primer-contenido-secundaria>h1 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px black;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* fin de primara seccion */
+
+/* segunda seccion */
+
+.segundo-contenido-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #b0d0f5;
+    padding-bottom: 4rem;
+}
+
+.segunda-seccion-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.segundo-contenido-sec p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: justify;
+}
+
+/* fin de segunda seccion */
+
+/* tercera seccion */
+
+.tercera-seccion-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    background-color: #f3dfbf;
+}
+
+.mas-actividades-sec {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mas-actividades-sec p{
+    width: 43%;
+    letter-spacing: normal;
+}
+
+#seccion-izq-sec {
+    width: 50%;
+}
+
+.act-sec {
+    width: 42vw;
+    padding-left: 5rem;
+}
+
+#seccion-der-sec {
+    width: 50%;
+}
+
+
+.actividades-sec p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/* fin de tercera seccion */
+
+/* cuarta seccion */
+
+.cuarta-seccion-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uba {
+    width: 27rem;
+}
+
+.unlam {
+    width: 15rem;
+}
+.unlp {
+    width: 14rem;
+}
+
+.unpaz {
+    width: 23rem;
+}
+
+.unsam {
+    width: 23rem;
+    padding-left: 10rem;
+}
+
+.untref {
+    width: 20rem;
+}
+
+.utn {
+    width: 20rem;
+}
+
+.cuarto-contenido-sec {
+    margin-bottom: 5rem;
+}
+
+/* fin de cuarta seccion */
+ 
+/*---fin de diseño de la pagina secundaria---*/
+
+/*----pagina de nosotros----*/
+
+/* primera seccion */
+
+.primera-seccion-nosotros {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/nosotros.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#primer-contenido-nosotros>p {
+    text-transform: capitalize;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 7px 7px 7px black;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#primer-contenido-nosotros>h1 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px black;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* fin de primera seccion */
+
+/* segunda seccion */
+
+.segunda-seccion-nos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/portada.jpg') no-repeat;
+    background-attachment: fixed;
+}
+
+.mision {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3rem;
+    background: #b0d0f5;
+    width: 25vw;
+    margin-top: 2rem;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mision p {
+    padding-bottom: 2rem;
+}
+
+#seccion-der-nos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 30vw;
+    background: #b0d0f5;
+    padding: 3rem;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* fin de segunda seccion */
+
+/* tercera seccion */
+
+.tercera-seccion-nos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    background: linear-gradient(#b0d0f5, #f3dfbfc9);
+}
+
+.tercer-contenido-nos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.tercera-seccion-nos p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 42%;
+    text-align: center;
+}
+
+/* fin de tercera seccion */
+
+/* cuarta seccion */
+
+.cuarta-seccion-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+/* fin de cuarta seccion */
+
+/*----fin de pagina de nosotros----*/
+
+/*-----diseño de pagina de contacto-----*/
+
+/* primera seccion */
+
+.primera-seccion-contacto {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/contacto.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#primer-contenido-contacto>h1 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px black;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+
+}
+/* fin de primera seccion */
+
+/*Tercera sección*/
+
+.tercera-seccion-contacto {
+    background:  linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/nosotros.jpg') no-repeat center/cover;
+    color: #ffffff;
+    text-shadow: 1px 1px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#seccion-izq-con {
+    width: 45%;
+}
+
+#seccion-der-con {
+    width: 50%;
+    padding-bottom: 4rem;
+}
+
+.mapita {
+    padding: 5rem;
+}
+
+h6 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
+    font-size: 2rem;
+    font-weight: 650;
+    color: rgb(22, 101, 170);
+    text-align: center;
+    margin: 2rem;
+}
+
+.contacto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*fin de Tercera sección*/
+
+/*-----fin de diseño de pagina de contacto-----*/
+
+/* footer */
+
+footer {
+    background-color: #f3dfbf;
+    color: rgb(33, 68, 206);
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+#seccion-cen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion-der {
+    text-align: center;
+}
+
+#seccion-der a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 0.4rem;
+}
+
+.redes {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.logo2 {
+    width: 8vw;
+}
+
+.face {
+    width: 2rem;
+}
+
+.info {
+    padding-bottom: 0.5rem;
+}
+
+/*fin del footer*/
+
+/* - estilos mobile 320px a 425px- */
+
+/* - index - */
+
+@media screen and (min-width:320px) and (max-width:425px){
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    header ul li a{
+        font-size: small;
+    }
+
+    .logo__nav {
+        padding-right: 3%;
+    }
+
+    #primer-contenido-inicio>h1{
+        font-size: x-large;
+    }
+
+    #primer-contenido-inicio p {
+        font-size: medium;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    .segunda-seccion-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5%;
+    }
+
+    .card1 {
+        width: 77%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(22, 21, 105, 0.233);
+    }
+
+    .card-body-inicio {
+        width: 100%;
+    }
+
+    .card-body-inicio p{
+        width: 100%;
+    }
+
+    .card-body-inicio a{
+        width: 35%;
+    }
+
+    .tercera-seccion-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #seccion-der-historia {
+        display: none;
+    }
+    
+    #seccion-izq-historia{
+        width: 85%;
+        margin-left: 0;
+    }
+    
+    #seccion-izq-historia p{
+        font-size: 14px;
+        line-height: 27px;
+        padding: 10%;
+    }
+
+    .carousel-inner {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: 0;
+    }
+
+    .d-block{
+        width: 100vw;
+    }
+
+    .cuarta-seccion {
+        margin-bottom: 40%;
+    }
+
+    .quinta-seccion-inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #seccion-izq-contacto {
+        width: 90%;
+    }
+
+    #seccion-der-contacto {
+        display: none;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nombre{
+        padding:0 ;
+        padding-left: 5%;
+    }
+
+    .email {
+        padding: 0;
+        padding-left: 5%;
+    }
+
+    .mens {
+        padding: 0;
+    }
+
+    textarea#texto{
+        margin: 0;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .fieldset {
+        width: 20px;
+    }
+
+    .enviar {
+        width: 25%;
+        margin: 0;
+        padding: 0.3rem;
+        font-size: small;
+        margin-top: 200px;
+        margin-left: 50%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 67%;
+        
+    }
+
+    #seccion-der {
+        display: none;
+    }
+
+    #seccion-izq {
+        display: none;
+    }
+
+    #seccion-cen{
+        padding-bottom: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width:375px){
+    .nombre{
+        padding:0 ;
+        padding-left: 10%;
+    }
+
+    .email {
+        padding: 0;
+        padding-left: 10%;
+    }
+}
+
+@media screen and (min-width:425px) {
+    .nombre {
+        padding: 0;
+        padding-left: 15%;
+    }
+
+    .email {
+        padding: 0;
+        padding-left: 15%;
+    }
+}
+
+/* - fin de index - */
+
+/* - nosotros - */
+
+@media screen and (min-width:320px) and (max-width:425px){
+
+    #primer-contenido-nosotros>h1 {
+        font-size: x-large;
+    }
+    #primer-contenido-nosotros>p{
+        font-size: medium;
+    }
+    
+    .segunda-seccion-nos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #seccion-izq-nos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #seccion-der-nos {
+        width: 70%;
+        margin-top: 2rem;
+    }
+
+    .tercer-contenido-nos p{
+        width: 70% ; 
+    }
+
+    h4 {
+        margin: 5%;
+    }
+    .mision {
+        margin-right: 0;
+        width: 70%;
+        padding: 10%;
+    }
+
+    #seccion-der-nos {
+        padding: 10%;
+    }
+    .cuarta-seccion-nos {
+        display: flex;
+        flex-direction: column;
+        width: 88%;
+        margin: 6%;
+    }
+}
+
+/* - fin de nosotros - */
+
+/* - primaria - */
+
+@media screen and (min-width:320px) and (max-width:425px){
+    
+    #primer-contenido-primaria>h1{
+        font-size: x-large;
+    }
+
+    #primer-contenido-primaria>p{
+        font-size: medium;
+    }
+
+    .segunda-seccion-primaria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #seccion-izq-pri {
+        width: 90%;
+    }
+
+    #seccion-der-pri {
+        width: 90%;
+    }
+
+    .tm>p {
+        padding: 0 10%;
+        font-size: medium;
+    }
+
+    .tt>p {
+        padding: 0 10%;
+        font-size: medium;
+    }
+
+    .tercera-seccion-primaria {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* - fin de primaria - */
+
+/* - secundaria - */
+
+@media screen and (min-width:320px) and (max-width:425px) {
+    #primer-contenido-secundaria>h1 {
+        font-size: x-large;
+    }
+    .segunda-seccion-sec {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .card1 {
+        padding: 7%;
+        margin: 5%;
+    }
+
+    .segundo-contenido-sec p {
+        padding: 8%;
+    }
+
+    #seccion-der-sec {
+        display: none;
+    }
+
+    .actividades-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .actividades-sec p {
+        width: 100%;
+    }
+    .act-sec {
+        width: 75vw;
+        padding: 0;
+    }
+
+    .arriba {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uba{
+        width: 70%;
+        padding-left: 15%;
+    }
+    .unpaz {
+        width: 70%;
+        padding-left: 15%;
+    }
+    .unsam {
+        width: 70%;
+        padding-left: 15%;
+    }
+
+    .untref {
+        width: 70%;
+        padding-left: 15%;
+    }
+    .utn {
+        width: 70%;
+        padding-left: 15%;
+    }
+}
+/* - fin de secundaria - */
+
+/* - contacto - */
+
+@media screen and (max-width:768px){
+
+    #primer-contenido-contacto>h1 {
+        font-size: x-large;
+    }
+    .tercera-seccion-contacto{
+        display: flex;
+        justify-content: center;
+    }
+    #seccion-izq-con {
+        display: none;
+    }
+    #seccion-der-con {
+        width: 90%;
+    }
+}
+
+/* - fin de contacto - */
+
+/* - responsive de 425px a 768px - */
+
+@media screen and (min-width:425px) and (max-width:564px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    header ul li a{
+        font-size: small;
+    }
+
+    .logo__nav {
+        padding-right: 3%;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:767px){
+    
+    /* index */
+
+    header ul li a{
+        font-size: small;
+    }
+
+    #primer-contenido-inicio>h1 {
+        font-size: xx-large;
+    }
+
+    #primer-contenido-inicio>p {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    .segunda-seccion-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5%;
+    }
+
+    .card1 {
+        width: 77%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(22, 21, 105, 0.233);
+    }
+
+    .card-body-inicio {
+        width: 100%;
+    }
+
+    .card-body-inicio p{
+        width: 100%;
+    }
+
+    .card-body-inicio a{
+        width: 35%;
+    }
+
+    .tercer-contenido-inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tercera-seccion-inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #seccion-der-historia {
+        display: none;
+    }
+    
+    #seccion-izq-historia{
+        width: 85%;
+    }
+    
+    #seccion-izq-historia p{
+        font-size: 14px;
+        line-height: 27px;
+        padding: 10%;
+    }
+
+    .quinta-seccion-inicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #seccion-der-contacto {
+        display: none;
+    }
+    
+    #seccion-izq-contacto {
+        width: 100%;
+    }
+
+    #seccion-izq-contacto p {
+        padding: 5%;
+    }
+
+    #seccion-der-contacto {
+        display: none;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nombre{
+        padding:0 ;
+        padding-left: 20%;
+    }
+
+    .email {
+        padding: 0;
+        padding-left: 20%;
+    }
+
+    .mens {
+        padding: 0;
+    }
+    .mensaje {
+        padding-right: 10%;
+    }
+
+    textarea#texto{
+        margin: 0;
+        min-width: 130%;
+        max-width: 130%;
+    }
+    .fieldset {
+        width: 20px;
+    }
+
+    .enviar {
+        width: 25%;
+        margin: 0;
+        padding: 0.3rem;
+        font-size: small;
+        margin-top: 200px;
+        margin-left: 35%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 90%;
+        
+    }
+
+    #seccion-der {
+        display: none;
+    }
+
+    #seccion-izq {
+        display: none;
+    }
+
+    #seccion-cen{
+        padding-bottom: 1.5rem;
+    }
+
+    /* nosotros */
+
+    #primer-contenido-nosotros>h1 {
+        font-size: xx-large;
+    }
+
+    #primer-contenido-nosotros>p {
+        font-size: large;
+    }
+
+    .segunda-seccion-nos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mision {
+        width: 70vw;
+    }
+
+    #seccion-der-nos {
+        width: 70vw;
+        margin-top: 2rem;
+    }
+
+    .tercera-seccion-nos p {
+        width: 100%;
+    }
+
+    .cuarta-seccion-nos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* primaria */
+
+    #primer-contenido-primaria>h1 {
+        font-size: xx-large;
+    }
+
+    #primer-contenido-primaria>p {
+        font-size: large;
+    }
+
+    .segunda-seccion-primaria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #seccion-izq-pri {
+        width: 86%;
+    }
+
+    #seccion-der-pri {
+        width: 86%;
+    }
+
+    /* secudnaria*/
+
+    #primer-contenido-secundaria>h1 {
+        font-size: xx-large;
+    }
+
+    .segunda-seccion-sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #seccion-der-sec {
+        display: none;
+    }
+
+    .actividades-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actividades-sec p{
+        width: 100%;
+    }
+
+    .act-sec {
+        padding-left: 0;
+        width: 64vw;
+    }
+
+
+    .arriba {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uba{
+        width: 70%;
+        padding-left: 15%;
+    }
+    .unpaz {
+        width: 70%;
+        padding-left: 15%;
+    }
+    .unsam {
+        width: 70%;
+        padding-left: 15%;
+    }
+
+    .untref {
+        width: 70%;
+        padding-left: 15%;
+    }
+    .utn {
+        width: 70%;
+        padding-left: 15%;
+    }
+}
+
+/* - responsive de 425px a 768px - */
+
+/* responsive de  768px - 1440px */
+
+@media screen and (min-width:768px) and (max-width:1440px){
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .logo__nav {
+        padding-left: 0;
+    }
+
+    #seccion-der-contacto {
+        display: none;
+    }
+
+    .segunda-seccion-inicio {
+        flex-direction: column;
+    }
+
+    .card1 {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-body-inicio {
+        width: 85%;
+    }
+
+    .card-body-inicio p{
+        width: 100%;
+    }
+
+    .tercera-seccion-inicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #seccion-der-historia {
+        display: none;
+    }
+
+    #seccion-izq-historia {
+        margin: 0;
+    }
+
+    .quinta-seccion-inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #seccion-izq-contacto {
+        width: 90%;
+    }
+
+    #seccion-der-contacto {
+        display: none;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nombre{
+        padding:0 ;
+    }
+
+    .email {
+        padding: 0;
+    }
+
+    .mens {
+        padding: 0;
+    }
+
+    textarea#texto{
+        margin: 0;
+        min-width: 22rem;
+        max-width: 22rem;
+    }
+    .fieldset {
+        width: 180px;
+    }
+
+    .enviar {
+        width: 25%;
+        margin: 0;
+        padding: 0.3rem;
+        font-size: small;
+        margin-top: 200px;
+        margin-left: 252px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 130%;
+    }
+
+    #seccion-der {
+        display: none;
+    }
+
+    #seccion-izq {
+        display: none;
+    }
+
+    #seccion-cen{
+        padding-bottom: 1.5rem;
+    }
+
+    .cuarta-seccion-nos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .segunda-seccion-primaria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #seccion-izq-pri {
+        width: 90%;
+    }
+
+    #seccion-der-pri {
+        width: 90%;
+    }
+
+    .segunda-seccion-sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #seccion-der-sec {
+        display: none;
+    }
+
+    .actividades-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .actividades-sec p {
+        width: 100%;
+    }
+    .act-sec {
+        width: 75vw;
+        padding: 0;
+
+    }
+
+    .arriba {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unsam {
+        padding-left: 2rem;
+    }
+
+    .tercera-seccion-contacto{
+        display: flex;
+        justify-content: center;
+    }
+    #seccion-izq-con {
+        display: none;
+    }
+    #seccion-der-con {
+        width: 90%;
+    }
+}
+
+/* fin de responsive de 768px - 1440 */
+
