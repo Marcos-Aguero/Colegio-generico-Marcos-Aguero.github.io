@@ -78,7 +78,7 @@
 
     <div class="container-fluid">
         <div class="row ">
-            <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
+            <div class="col-12 col-md-12 col-xl-6 col-xxl-4 d-flex justify-content-center">
                 <div class="card card1" style="width: 25rem;">
                     <img src="./Imágenes/card1.jpg" class="card1-inicio" alt="Egresados">
                     <div class="card-body">
@@ -91,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
+            <div class="col-12 col-md-12 col-xl-6 col-xxl-4 d-flex justify-content-center">
                 <div class="card card1" style="width: 25rem;">
                     <img src="./Imágenes/card2.jpg" class="card1-inicio" alt="Musica">
                     <div class="card-body">
@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
+            <div class="col-12 col-md-12 col-xl-12 col-xxl-4 d-flex justify-content-center">
                 <div class="card card1" style="width: 25rem;">
                     <img src="./Imágenes/card3.jpg" class="card1-inicio" alt="Matematicas">
                     <div class="card-body">
@@ -133,7 +133,7 @@
             <p>La historia es la narración de los sucesos del pasado; generalmente los de la humanidad, aunque, también puede no estar centrada en el humano. Asimismo, es una disciplina académica que estudia dichos acontecimientos. A la ciencia o disciplina académica también se le denomina historiografía para distinguirla de la historia entendida como los hechos objetivos sucedidos. </p>
         </div>
         <div id="seccion-der-historia" class="mitad">
-            <img src="./Imágenes/iconos/Logo.png" class="logo3" alt="logo">
+            <a href="#"><img src="./Imágenes/iconos/Logo.png" class="logo3" alt="logo"></a>
         </div>
     </section>
     <!--Fin de Tercera Sección-->
@@ -141,9 +141,7 @@
     
     <!--Cuarta Sección-->
 
-
-
-    <section class="cuarta-seccion" id="cuarta-seccion">
+    <section class="cuarta-seccion">
         <div class="cuarto-contenido">
             <h3>Comunidad</h3>
             <br>
@@ -211,16 +209,6 @@
         </div>
     
     </section>
-    
-    
-
-
-
-
-
- 
-
-    
 
     <!--Fin de Cuarta Sección-->
 
@@ -235,27 +223,22 @@
             mismas se toquen, es decir, se produzca el contacto, deberá existir algún tipo de relación, vínculo, enlace o encuentro
             entre las mencionadas. En la tevé gigante que reproducía el partido se pudo ver con claridad que hubo contacto, pero
             lamentablemente el árbitro no cobró el penal que podría haber cambiado el curso del partido.</p>
-            <form action="link de accion del formulario" method="get" enctype="multipart/form-data">
-                <fieldset class="formulario">
-                    <legend class="legen">Formulario de Contacto</legend>
-                    <div class="nombre">
-                        <label for="nombre">Nombre y Apellido:</label>
-                        <input type="text" class="field" id="nombre" name="nombre">
-                    </div>
-                    <br>
-                    <div class="email">
-                        <label class="email2" for="E-mail">E-mail:</label>
-                        <input type="text" class="field" id="E-mail" name="E-mail">
-                    </div>
-                    <br>
-                    <div class="mensaje">
-                        <label for="mensaje" class="mens">Mensaje:</label>
-                        <textarea name="mensaje" id="texto" cols="28" rows="10"></textarea>
-                        <input type="submit" class="enviar" value="Enviar">
-                    </div>
-                </fieldset>
-            </form>
 
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Armando Paredes">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@email.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="mb-33">
+                    <input type="submit" class="enviar" value="Enviar">  
+                </div>
+            </div>
         </div>
         <div id="seccion-der-contacto" class="mitad2">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.4013066552066!2d-58.71398438447646!3d-34.54339328047525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd0d0973dbf7%3A0x7a94cad90e0c82fa!2sBelgrano%201302%2C%20B1663%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1659063114460!5m2!1ses!2sar"
@@ -272,12 +255,15 @@
 
     <!--Footer-->
 
+
+    
+
+
+
     <footer>
-        <div id="seccion-izq" class="mitad">
-            <a href="./index.html">
-                <img src="./Imágenes/iconos/Logo.png" class="logo2" alt="logo">
-            </a>
-        </div>
+        <a href="./index.html">
+            <img src="./Imágenes/iconos/Logo.png" class="logo2" alt="logo">
+        </a>
         <div id="seccion-cen" class="mitad">
             <h5>Seguinos en:</h5>
             <div class="redes">
@@ -296,7 +282,6 @@
             <a href="#">lorem sit dolor ipsum</a>
             <a href="#">lorem sit lorem dolor</a>
         </div>
-
     </footer>
 
     <!--Fin de Footer-->
