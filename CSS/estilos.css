@@ -38,9 +38,9 @@ header {
     z-index: 1;
 }
 
-nav {
-    display: flex;
-    align-items: center;
+.navbar {
+    background: #faf6f0;
+    --bs-navbar-toggler-border-color: rgb(195 0 0 / 0%);
 }
 
 ul {
@@ -54,7 +54,7 @@ ul {
 
 li {
     list-style-type: none;
-    padding: 10px;
+    padding: 12px;
 }
 
 .logo__nav {
@@ -70,7 +70,7 @@ li {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
-    color: rgb(23, 42, 119);
+    color: #172a77;
 }
 header ul li a {
     font-family: 'Montserrat', sans-serif;
@@ -127,13 +127,6 @@ header ul li a:hover {
 
 /* segunda seccion */
 
-.segunda-seccion-inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem;
-}
-
 .card1-inicio {
     width: 100%;
     border-radius: 4px;
@@ -145,7 +138,6 @@ header ul li a:hover {
     flex-direction: column;
     justify-content: center;
     margin: 4rem;
-    padding: 2rem;
     width: 20vw;
     border-radius: 6px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -174,13 +166,13 @@ header ul li a:hover {
     padding: 1.5rem 0rem;
 }
 
-.card-body-inicio p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    width: 20vw;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.card-body-inicio a {
+.card-body a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
@@ -189,15 +181,14 @@ header ul li a:hover {
     background: rgb(216, 224, 255);
     border: 1px solid rgb(23, 42, 119);
     color: rgb(23, 42, 119);
-    padding: 1.25rem;
-    margin-top: 2.5rem;
+    padding: 0.7rem;
     display: flex;
     justify-content: center;
-    width: 25%;
+    width: 30%;
     transition: all 400ms ease;
 }
 
-.card-body-inicio a:hover {
+.card-body a:hover {
     background: rgb(23, 42, 119);
     color: #faf6f0;
 }
@@ -261,6 +252,16 @@ header ul li a:hover {
 /*fin de tercera seccion*/
 
 /*cuarta seccion*/
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 12rem;
+    height: 3rem;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 95%;
+}
 
 .d-block {
     width: 100vw;
