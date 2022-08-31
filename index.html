@@ -7,29 +7,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/estilos.css">
     <title>Colegiogenerico</title>
 </head>
 <body>
+
+
     <!--navbar-->
     <header>
-        <nav>
-            <div class="logo__nav">
-                <a href="./index.html">
-                    <img src="./Imágenes/iconos/Logo.png" class="logo1" alt="logo" >
-                </a>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo__nav">
+                    <a href="./index.html">
+                        <img src="./Imágenes/iconos/Logo.png" class="logo1" alt="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="./Páginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="./Páginas/primaria.html">Primaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="./Páginas/secundaria.html">Secundaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="./Páginas/contacto.html">Contacto</a>
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./Páginas/nosotros.html">Nosotros</a></li>
-                <li><a href="./Páginas/primaria.html">Primaria</a></li>
-                <li><a href="./Páginas/secundaria.html">Secundaria</a></li>
-                <li><a href="./Páginas/contacto.html">Contacto</a></li>
-            </ul>
         </nav>
+
     </header>
-    <!--fin de navbar-->
+    
 
     <!--comienzo del main-->
 
@@ -51,39 +76,49 @@
     
     <h3>Actividades Escolares</h3>
 
-    <section class="segunda-seccion-inicio" id="segunda-seccion-inicio">
-        <div class="card1">
-            <img src="./Imágenes/card1.jpg" class="card1-inicio" alt="Egresados">
-            <div class="card-body-inicio">
-                <h5 class="card-title-inicio">Egresados</h5>
-                <p class="card-text">Graduado o egresado es aquel individuo que ha concluido sus estudios y ha obtenido un título o una graduación académica, normalmente de rango universitario. El significado más preciso de egresar es formarse, y se usa como sinónimo de
-                graduarse, por ello egresado lo es de graduado o formado.</p>
-                <a href="#" class="btn-p">Ver más</a>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-12 col-md-12 col-xl-6 col-xxl-4 d-flex justify-content-center">
+                <div class="card card1" style="width: 25rem;">
+                    <img src="./Imágenes/card1.jpg" class="card1-inicio" alt="Egresados">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-inicio">Egresados</h5>
+                        <p class="card-text">Graduado o egresado es aquel individuo que ha concluido sus estudios y ha obtenido un título o una graduación académica,
+                        normalmente de rango universitario. El significado más preciso de egresar es formarse, y se usa como sinónimo de
+                        graduarse, por ello egresado lo es de graduado o formado.</p>
+                        <a href="#" class="btn-p">Ver Más</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <div class="card1">
-            <img src="./Imágenes/card2.jpg" class="card1-inicio" alt="Musica">
-            <div class="card-body-inicio">
-                <h5 class="card-title-inicio">Clases de Música</h5>
-                <p class="card-text"> La música es, según la definición tradicional del término, el arte de crear y organizar sonidos y silencios respetando
-                los principios fundamentales de la melodía, la armonía y el ritmo, mediante la intervención de complejos procesos
-                psicoanímicos.</p>
-                <a href="#" class="btn-p">Ver más</a>
-            </div>
-        </div>
-        <div class="card1">
-            <img src="./Imágenes/card3.jpg" class="card1-inicio" alt="Matematicas">
-            <div class="card-body-inicio">
-                <h5 class="card-title-inicio">Clases de matemáticas</h5>
-                <p class="card-text">La matemática​ es una ciencia formal que, partiendo de axiomas y siguiendo el razonamiento lógico, estudia las
-                propiedades, estructuras abstractas y relaciones entre entidades abstractas como números, figuras geométricas, iconos,
-                glifos o símbolos en general.</p>
-                <a href="#" class="btn-p">Ver más</a>
-            </div>
-        </div>
 
-    </section>
+            <div class="col-12 col-md-12 col-xl-6 col-xxl-4 d-flex justify-content-center">
+                <div class="card card1" style="width: 25rem;">
+                    <img src="./Imágenes/card2.jpg" class="card1-inicio" alt="Musica">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-inicio">Clases de Música</h5>
+                        <p class="card-text">La música es, según la definición tradicional del término, el arte de crear y organizar sonidos y silencios respetando
+                        los principios fundamentales de la melodía, la armonía y el ritmo, mediante la intervención de complejos procesos
+                        psicoanímicos.</p>
+                        <br>
+                        <a href="#" class="btn-p">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-xl-12 col-xxl-4 d-flex justify-content-center">
+                <div class="card card1" style="width: 25rem;">
+                    <img src="./Imágenes/card3.jpg" class="card1-inicio" alt="Matematicas">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-inicio">Clases de matemáticas</h5>
+                        <p class="card-text">La matemática es una ciencia formal que, partiendo de axiomas y siguiendo el razonamiento lógico, estudia las
+                        propiedades, estructuras abstractas y relaciones entre entidades abstractas como números, figuras geométricas, iconos,
+                        glifos o símbolos en general.</p>
+                        <a href="#" class="btn-p">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Fin de Segunda Sección-->
 
@@ -96,30 +131,49 @@
             <p>La historia es la narración de los sucesos del pasado; generalmente los de la humanidad, aunque, también puede no estar centrada en el humano. Asimismo, es una disciplina académica que estudia dichos acontecimientos. A la ciencia o disciplina académica también se le denomina historiografía para distinguirla de la historia entendida como los hechos objetivos sucedidos. </p>
         </div>
         <div id="seccion-der-historia" class="mitad">
-            <img src="./Imágenes/iconos/Logo.png" class="logo3" alt="logo">
+            <a href="#"><img src="./Imágenes/iconos/Logo.png" class="logo3" alt="logo"></a>
         </div>
     </section>
     <!--Fin de Tercera Sección-->
-    
 
+    
     <!--Cuarta Sección-->
 
-    <section class="cuarta-seccion" id="cuarta-seccion">
+    <section class="cuarta-seccion">
         <div class="cuarto-contenido">
             <h3>Comunidad</h3>
             <br>
         </div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" 
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" 
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" 
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" 
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" 
+                    aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" 
+                    aria-label="Slide 9"></button>
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <a href="#"><img src="./Imágenes/carusel1.jpg" class="d-block w-100" alt="pintando"></a>
-                    
                 </div>
                 <div class="carousel-item">
-                    <a href="#"><img src="./Imágenes/carusel2.jpg" class="d-block w-100" alt="recreacion"></a>
+                    <img src="./Imágenes/carusel2.jpg" class="d-block w-100" alt="recreacion">
                 </div>
                 <div class="carousel-item">
-                    <a href="#"><img src="./Imágenes/carusel3.jpg" class="d-block w-100" alt="higienizando"></a>
+                    <img src="./Imágenes/carusel3.jpg" class="d-block w-100" alt="higienizando">
                 </div>
                 <div class="carousel-item">
                     <a href="#"><img src="./Imágenes/card1.jpg" class="d-block w-100" alt="higienizando"></a>
@@ -140,18 +194,18 @@
                     <a href="#"><img src="./Imágenes/robotica.jpg" class="d-block w-100" alt="higienizando"></a>
                 </div>
             </div>
-            <!--por ahora no van-->
-            <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-            -->
-            <!--por ahora no van-->
         </div>
+    
     </section>
 
     <!--Fin de Cuarta Sección-->
@@ -167,27 +221,22 @@
             mismas se toquen, es decir, se produzca el contacto, deberá existir algún tipo de relación, vínculo, enlace o encuentro
             entre las mencionadas. En la tevé gigante que reproducía el partido se pudo ver con claridad que hubo contacto, pero
             lamentablemente el árbitro no cobró el penal que podría haber cambiado el curso del partido.</p>
-            <form action="link de accion del formulario" method="get" enctype="multipart/form-data">
-                <fieldset class="formulario">
-                    <legend class="legen">Formulario de Contacto</legend>
-                    <div class="nombre">
-                        <label for="nombre">Nombre y Apellido:</label>
-                        <input type="text" class="field" id="nombre" name="nombre">
-                    </div>
-                    <br>
-                    <div class="email">
-                        <label class="email2" for="E-mail">E-mail:</label>
-                        <input type="text" class="field" id="E-mail" name="E-mail">
-                    </div>
-                    <br>
-                    <div class="mensaje">
-                        <label for="mensaje" class="mens">Mensaje:</label>
-                        <textarea name="mensaje" id="texto" cols="28" rows="10"></textarea>
-                        <input type="submit" class="enviar" value="Enviar">
-                    </div>
-                </fieldset>
-            </form>
 
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Armando Paredes">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@email.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="mb-33">
+                    <input type="submit" class="enviar" value="Enviar">  
+                </div>
+            </div>
         </div>
         <div id="seccion-der-contacto" class="mitad2">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.4013066552066!2d-58.71398438447646!3d-34.54339328047525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd0d0973dbf7%3A0x7a94cad90e0c82fa!2sBelgrano%201302%2C%20B1663%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1659063114460!5m2!1ses!2sar"
@@ -205,11 +254,9 @@
     <!--Footer-->
 
     <footer>
-        <div id="seccion-izq" class="mitad">
-            <a href="./index.html">
-                <img src="./Imágenes/iconos/Logo.png" class="logo2" alt="logo">
-            </a>
-        </div>
+        <a href="./index.html">
+            <img src="./Imágenes/iconos/Logo.png" class="logo2" alt="logo">
+        </a>
         <div id="seccion-cen" class="mitad">
             <h5>Seguinos en:</h5>
             <div class="redes">
@@ -223,12 +270,11 @@
         </div>
         <div id="seccion-der" class="mitad">
             <h5 class="info">+ INFO</h5>
-            <a href="#">lorem ipsum dolor sit</a>
-            <a href="#">lorem dolor ipsum sit</a>
-            <a href="#">lorem sit dolor ipsum</a>
-            <a href="#">lorem sit lorem dolor</a>
+            <a href="#">¿Qué cuentan las ovejas para dormir?</a>
+            <a href="#">¿Hay una sola moral?</a>
+            <a href="#">¿Existe realmente el alma?</a>
+            <a href="#">¿Por qué llevaban casco los kamikazes?</a>
         </div>
-
     </footer>
 
     <!--Fin de Footer-->

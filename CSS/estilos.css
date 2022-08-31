@@ -32,30 +32,29 @@ h4 {
 /* navbar*/
 
 header {
-    width: 100vw;
+    width: 100%;
     background-color: #faf6f0;
     position: fixed;
     z-index: 1;
 }
 
-nav {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
+.navbar {
+    background: #faf6f0;
+    --bs-navbar-toggler-border-color: rgb(195 0 0 / 0%);
 }
 
 ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     background-color: #faf6f0;
-    width: 100vw;
+    width: 95vw;
     padding-right: 10px;
     z-index: 1;
 }
 
 li {
     list-style-type: none;
-    padding: 10px;
+    padding: 12px;
 }
 
 .logo__nav {
@@ -69,6 +68,10 @@ li {
     align-items: center;
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #172a77;
+}
 header ul li a {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -124,13 +127,6 @@ header ul li a:hover {
 
 /* segunda seccion */
 
-.segunda-seccion-inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem;
-}
-
 .card1-inicio {
     width: 100%;
     border-radius: 4px;
@@ -142,7 +138,6 @@ header ul li a:hover {
     flex-direction: column;
     justify-content: center;
     margin: 4rem;
-    padding: 2rem;
     width: 20vw;
     border-radius: 6px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -171,13 +166,13 @@ header ul li a:hover {
     padding: 1.5rem 0rem;
 }
 
-.card-body-inicio p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    width: 20vw;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.card-body-inicio a {
+.card-body a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
@@ -186,15 +181,14 @@ header ul li a:hover {
     background: rgb(216, 224, 255);
     border: 1px solid rgb(23, 42, 119);
     color: rgb(23, 42, 119);
-    padding: 1.25rem;
-    margin-top: 2.5rem;
+    padding: 0.7rem;
     display: flex;
     justify-content: center;
-    width: 25%;
+    width: 30%;
     transition: all 400ms ease;
 }
 
-.card-body-inicio a:hover {
+.card-body a:hover {
     background: rgb(23, 42, 119);
     color: #faf6f0;
 }
@@ -215,6 +209,7 @@ header ul li a:hover {
     "seccion-izq-historia seccion-der-historia "
     "seccion-izq-historia seccion-der-historia "
     ;
+    justify-items: center;
 }
 
 .historia {
@@ -226,23 +221,29 @@ header ul li a:hover {
     grid-area: tercer-contenido-inicio;
 }
 
+#seccion-izq-historia {
+    grid-area: seccion-izq-historia;
+    grid-row: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3dfbf91;
+    border-radius: 6px;
+    margin: 0 6rem;
+}
+
 #seccion-der-historia {
     grid-area: seccion-der-historia;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .logo3 {
-    padding-left: 16rem;
-    width: 50%;
+    width: 80%;
 }
 
-#seccion-izq-historia {
-    background-color: #f3dfbf91;
-    border-radius: 6px;
-    box-shadow: inset;
-    grid-area: seccion-izq-historia;
-    grid-row: auto;
-    margin-left: 2rem;
-}
 
 #seccion-izq-historia p{
     text-transform: none;
@@ -252,33 +253,27 @@ header ul li a:hover {
     text-align: justify;
     font-size: large;
     font-weight: 500;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 /*fin de tercera seccion*/
 
 /*cuarta seccion*/
 
-.carousel-inner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 0.9% ;
-    margin-bottom: 20px;
-    margin-left: 0.9%;
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 12rem;
+    height: 3rem;
 }
 
-.carousel-item {
-    overflow: visible;
+.carousel-inner {
+    width: 100%;
+    height: 95%;
 }
 
 .d-block {
-    width: 32vw;
-    transition: 0.7s;
-    object-fit: cover;
-}
-
-.d-block:hover {
-    transform: scale(1.1);
+    width: 100vw;
 }
 
 /* fin de cuarta seccion */
@@ -288,7 +283,6 @@ header ul li a:hover {
 .quinta-seccion-inicio {
     background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/contacto.jpg') no-repeat center/cover;
     color: white;
-    margin-bottom: 1.5rem;
     text-shadow: 2px 2px black;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -326,61 +320,28 @@ header ul li a:hover {
     flex-direction: column;
 }
 #seccion-izq-contacto p{
-    text-align: center;
-    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.legen {
-    text-align: center;
-}
-
-.field {
-    width: 16rem;
-}
-
-.nombre {
-    padding-left: 15rem;
-    padding-top: 1rem;
-}
-
-.email {
-    padding-left: 15rem;
-}
-.email2 {
-    padding-right: 6rem;
-}
-
-.mensaje {
+.mb-33 {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1rem;
-}
-
-.mens {
-    padding-left: 15rem;
-}
-
-textarea#texto {
-    margin-left: 15rem;
-    min-width: 23rem;
-    max-width: 23rem;
-    min-height: 10rem;
-    max-height: 10rem;
-    
+    align-items: flex-end;
 }
 
 .enviar {
     background-color: rgb(33, 68, 206);
-    width: 7%;
     color: #faf6f0;
     border-color: #faf6f0;
-    padding: 1rem;
+    padding: 1.3rem;
     text-transform: uppercase;
     font-family: 'montserrat', sans-serif;
     font-size: medium;
-    position: absolute;
-    margin-top: 8rem;
-    margin-left: 40rem;
+    position: relative;
+    margin-top: 4rem;
+
 }
 
 /*fin de quinta seccion*/
@@ -774,9 +735,9 @@ textarea#texto {
 
 .mision {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 3rem;
+    padding: 2rem;
     background: #b0d0f5;
-    width: 25vw;
+    width: 35vw;
     margin-top: 2rem;
     border-radius: 6px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -788,9 +749,9 @@ textarea#texto {
 
 #seccion-der-nos {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 30vw;
+    width: 35vw;
     background: #b0d0f5;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 6px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
@@ -914,35 +875,18 @@ footer {
     color: rgb(33, 68, 206);
     font-family: 'montserrat', sans-serif;
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-}
-
-#seccion-cen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
 }
 
-#seccion-der {
-    text-align: center;
-}
-
-#seccion-der a {
-    position: relative;
-    display: block;
-    text-decoration: none;
-    padding: 0.4rem;
+.logo2 {
+    width: 30%;
+    margin-left: 12rem;
 }
 
 .redes {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-}
-.logo2 {
-    width: 8vw;
 }
 
 .face {
@@ -953,6 +897,29 @@ footer {
     padding-bottom: 0.5rem;
 }
 
+#seccion-cen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+#seccion-der {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15rem;
+}
+
+#seccion-der a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 0.4rem;
+}
+
 /*fin del footer*/
 
 /* - estilos mobile 320px a 425px- */
@@ -961,11 +928,6 @@ footer {
 
 @media screen and (min-width:320px) and (max-width:425px){
 
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-    
     ul {
         display: flex;
         flex-direction: column;
@@ -1011,16 +973,9 @@ footer {
         background: rgba(22, 21, 105, 0.233);
     }
 
-    .card-body-inicio {
-        width: 100%;
-    }
 
-    .card-body-inicio p{
-        width: 100%;
-    }
-
-    .card-body-inicio a{
-        width: 35%;
+    .card-body a {
+        width: 44%;
     }
 
     .tercera-seccion-inicio {
@@ -1036,7 +991,7 @@ footer {
     
     #seccion-izq-historia{
         width: 85%;
-        margin-left: 0;
+        margin-left: 30%;
     }
     
     #seccion-izq-historia p{
@@ -1055,10 +1010,6 @@ footer {
         width: 100vw;
     }
 
-    .cuarta-seccion {
-        margin-bottom: 40%;
-    }
-
     .quinta-seccion-inicio {
         display: flex;
         flex-direction: column;
@@ -1068,47 +1019,19 @@ footer {
 
     #seccion-izq-contacto {
         width: 90%;
+        padding: 0rem;
     }
 
     #seccion-der-contacto {
         display: none;
     }
 
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .nombre{
-        padding:0 ;
-        padding-left: 5%;
-    }
-
-    .email {
-        padding: 0;
-        padding-left: 5%;
-    }
-
-    .mens {
-        padding: 0;
-    }
-
-    textarea#texto{
-        margin: 0;
-        min-width: 100%;
-        max-width: 100%;
-    }
-    .fieldset {
-        width: 20px;
-    }
-
     .enviar {
-        width: 25%;
+        width: 37%;
         margin: 0;
         padding: 0.3rem;
         font-size: small;
-        margin-top: 200px;
+        margin-top: 12px;
         margin-left: 50%;
     }
 
@@ -1116,14 +1039,13 @@ footer {
         display: flex;
         flex-direction: column;
         font-size: 67%;
-        
     }
 
     #seccion-der {
         display: none;
     }
 
-    #seccion-izq {
+    .logo2 {
         display: none;
     }
 
@@ -1133,29 +1055,6 @@ footer {
 
 }
 
-@media screen and (min-width:375px){
-    .nombre{
-        padding:0 ;
-        padding-left: 10%;
-    }
-
-    .email {
-        padding: 0;
-        padding-left: 10%;
-    }
-}
-
-@media screen and (min-width:425px) {
-    .nombre {
-        padding: 0;
-        padding-left: 15%;
-    }
-
-    .email {
-        padding: 0;
-        padding-left: 15%;
-    }
-}
 
 /* - fin de index - */
 
@@ -1270,7 +1169,6 @@ footer {
         margin: 0;
     }
     .card1 {
-        padding: 7%;
         margin: 5%;
     }
 
@@ -1439,7 +1337,7 @@ footer {
     .tercera-seccion-inicio {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     #seccion-der-historia {
@@ -1448,6 +1346,7 @@ footer {
     
     #seccion-izq-historia{
         width: 85%;
+        margin: 0 2.6rem;
     }
     
     #seccion-izq-historia p{
@@ -1467,6 +1366,7 @@ footer {
     
     #seccion-izq-contacto {
         width: 100%;
+        padding: 2rem;
     }
 
     #seccion-izq-contacto p {
@@ -1514,22 +1414,21 @@ footer {
         margin: 0;
         padding: 0.3rem;
         font-size: small;
-        margin-top: 200px;
+        margin-top: 12px;
         margin-left: 35%;
     }
 
     footer {
         display: flex;
         flex-direction: column;
-        font-size: 90%;
-        
+        font-size: 90%;   
     }
 
     #seccion-der {
         display: none;
     }
 
-    #seccion-izq {
+    .logo2 {
         display: none;
     }
 
@@ -1695,6 +1594,8 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: rgba(22, 21, 105, 0.233);
+        
     }
 
     .card-body-inicio {
@@ -1708,6 +1609,7 @@ footer {
     .tercera-seccion-inicio {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
     }
 
     #seccion-der-historia {
@@ -1715,7 +1617,7 @@ footer {
     }
 
     #seccion-izq-historia {
-        margin: 0;
+        margin: 37px;
     }
 
     .quinta-seccion-inicio {
@@ -1723,6 +1625,20 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .segunda-seccion-nos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mision {
+        width: 70vw;
+    }
+
+    #seccion-der-nos {
+        width: 70vw;
+        margin-top: 2rem;
     }
 
     #seccion-izq-contacto {
@@ -1761,11 +1677,11 @@ footer {
     }
 
     .enviar {
-        width: 25%;
+        width: 17%;
         margin: 0;
         padding: 0.3rem;
         font-size: small;
-        margin-top: 200px;
+        margin-top: 12px;
         margin-left: 252px;
     }
 
@@ -1779,7 +1695,7 @@ footer {
         display: none;
     }
 
-    #seccion-izq {
+    .logo2 {
         display: none;
     }
 
@@ -1860,6 +1776,7 @@ footer {
     #seccion-der-con {
         width: 90%;
     }
+    
 }
 
 /* fin de responsive de 768px - 1440 */
