@@ -9,7 +9,7 @@ h3 {
     font-family: 'montserrat', sans-serif;
     text-transform: uppercase;
     text-shadow: 4px 4px 7px rgba(58, 58, 58, 0);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 650;
     color: rgb(22, 101, 170);
     text-align: center;
@@ -43,6 +43,10 @@ header {
     --bs-navbar-toggler-border-color: rgb(195 0 0 / 0%);
 }
 
+.navbar-toggler {
+    color: rgb(23, 42, 119, 0%);
+}
+
 ul {
     display: flex;
     justify-content: end;
@@ -72,6 +76,7 @@ li {
 .navbar-nav .show>.nav-link {
     color: #172a77;
 }
+
 header ul li a {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -80,11 +85,12 @@ header ul li a {
     font-weight: 700;
     border-bottom: 2px solid transparent;
     padding: 4px 0;
-    transition: 0.7s ease-out;
+    transition: 0.4s ease-out;
 }
 
 header ul li a:hover {
     border-bottom: 1px solid rgb(23, 42, 119);
+    transition: all 400ms ease;
 }
 
 /* fin de navbar*/
@@ -400,11 +406,11 @@ header ul li a:hover {
 }
 
 #seccion-izq-pri {
-    width: 30%;
+    width: 50%;
 }
 
 #seccion-der-pri {
-    width: 30%;
+    width: 50%;
 }
 
 .tur-man{
@@ -508,8 +514,8 @@ header ul li a:hover {
 .actividades p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
-    width: 80%;
-    padding: 2rem;
+    width: 77%;
+    padding-top: 2rem;
 }
 
 .mas-actividades a{
@@ -620,18 +626,23 @@ header ul li a:hover {
 
 .act-sec {
     width: 42vw;
-    padding-left: 5rem;
 }
 
 #seccion-der-sec {
     width: 50%;
 }
 
+.actividades-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .actividades-sec p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding: 2rem;
+    padding-top: 1.8rem;
+    width: 80%;
 }
 
 
@@ -649,15 +660,36 @@ header ul li a:hover {
     width: 27rem;
 }
 
+.uba:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .unlam {
     width: 15rem;
 }
+
+.unlam:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .unlp {
     width: 14rem;
 }
 
+.unlp:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .unpaz {
     width: 23rem;
+}
+
+.unpaz:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
 }
 
 .unsam {
@@ -665,12 +697,27 @@ header ul li a:hover {
     padding-left: 10rem;
 }
 
+.unsam:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .untref {
     width: 20rem;
 }
 
+.untref:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .utn {
     width: 20rem;
+}
+
+.utn:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
 }
 
 .cuarto-contenido-sec {
