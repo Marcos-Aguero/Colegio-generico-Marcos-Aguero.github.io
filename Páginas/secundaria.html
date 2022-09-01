@@ -7,27 +7,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/estilos.css">
     <title>Colegiogenerico</title>
 </head>
 <body>
 
     <!--navbar-->
     <header>
-        <nav>
-            <div class="logo__nav">
-                <a href="../index.html">
-                    <img src="../Imágenes/iconos/Logo.png" class="logo1" alt="logo">
-                </a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo__nav">
+                    <a href="../index.html">
+                        <img src="../Imágenes/iconos/Logo.png" class="logo1" alt="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page"
+                                href="../Páginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page"
+                                href="../Páginas/primaria.html">Primaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page"
+                                href="../Páginas/secundaria.html">Secundaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page"
+                                href="../Páginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li> <a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./primaria.html">Primaria</a></li>
-                <li><a href="./secundaria.html">Secundaria</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
         </nav>
     </header>
     <!--fin de navbar-->
@@ -48,50 +75,53 @@
     
     <!--Segunda Sección-->
     <div class="segundo-contenido-sec">
-            <h3>Propuesta Educativa</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, exercitationem, blanditiis voluptatibus deleniti pariatur adipisci animi eaque ab similique dolorem iusto ratione beatae eligendi illum alias vero at unde aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur atque culpa, quis, optio fuga earum mollitia exercitationem eum sunt repellat repudiandae aperiam dolorum voluptatibus! Eaque nostrum ipsum ex laudantium repellat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima ipsam laborum quidem aperiam necessitatibus ab at, facere quos magni consequuntur amet non veniam ullam culpa? Sit delectus veritatis voluptatibus!lorem</p>
+        <h3>Propuesta Educativa</h3>
+        <p>Las propuestas son convites, ofrecimientos o promesas que una persona manifiesta ante otra con un determinado objetivo. Cuando un sujeto le propone algo a otro, espera una acción o una respuesta por parte de éste. Pedagógico, por su parte, es lo que está vinculado a la pedagogía (el conjunto de saberes orientados hacia el plano educativo). La pedagogía es un fenómeno social e inherente al ser humano. Con esto en claro, podemos avanzar con la definición de propuesta pedagógica. Se trata de aquella acción que promueve una aplicación de la didáctica para el desarrollo de ciertos conocimientos.</p>    
     </div>
 
-    <section class="segunda-seccion-sec" id="segunda-seccion-sec">
-        <div class="card1">
-            <img src="../Imágenes/electronica.jpg" class="card1-inicio" alt="Egresados">
-            <div class="card-body-inicio">
-                <h5 class="card-title-inicio">Electrónica</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium esse quasi quae
-                    soluta
-                    harum sit doloribus, deleniti suscipit unde cupiditate voluptatibus vero, dicta delectus. Cupiditate a
-                    minus
-                    ut perferendis numquam?</p>
-                <a href="#" class="btn-p">Ver Más</a>
-            </div>
-        </div>
-    
-        <div class="card1">
-            <img src="../Imágenes/robotica.jpg" class="card1-inicio" alt="Musica">
-            <div class="card-body-inicio">
-                <h5 class="card-title-inicio">Robótica</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium esse quasi quae
-                    soluta
-                    harum sit doloribus, deleniti suscipit unde cupiditate voluptatibus vero, dicta delectus. Cupiditate a
-                    minus
-                    ut perferendis numquam?</p>
-                <a href="#" class="btn-p">Ver Más</a>
-            </div>
-        </div>
-        <div class="card1">
-            <img src="../Imágenes/computacion.jpg" class="card1-inicio" alt="Matematicas">
-            <div class="card-body-inicio">
-                <h5 class="card-title-inicio">Computación</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium esse quasi quae
-                    soluta
-                    harum sit doloribus, deleniti suscipit unde cupiditate voluptatibus vero, dicta delectus. Cupiditate a
-                    minus
-                    ut perferendis numquam?</p>
-                <a href="#" class="btn-p">Ver Más</a>
+    <section>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-12 col-md-12 col-xl-6 col-xxl-4 d-flex justify-content-center">
+                    <div class="card card1" style="width: 25rem;">
+                        <img src="../Imágenes/computacion.jpg" class="card1-inicio" alt="Computación">
+                        <div class="card-body">
+                            <h5 class="card-title card-title-inicio">Computación</h5>
+                            <p class="card-text">Computación es sinónimo de informática. Como tal, se refiere a la tecnología desarrollada para el tratamiento automático
+                            de la información mediante el uso computadoras u ordenadores.</p>
+                            <a href="#" class="btn-p">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-md-12 col-xl-6 col-xxl-4 d-flex justify-content-center">
+                    <div class="card card1" style="width: 25rem;">
+                        <img src="../Imágenes/electronica.jpg" class="card1-inicio" alt="Electrónica">
+                        <div class="card-body">
+                            <h5 class="card-title card-title-inicio">Electrónica</h5>
+                            <p class="card-text">Se llama electrónica a una disciplina técnica y científica, considerada como una rama de la física y como una
+                            especialización de la ingeniería, que se dedica al estudio y la producción de sistemas físicos basados en la conducción.</p>
+                            <a href="#" class="btn-p">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-md-12 col-xl-12 col-xxl-4 d-flex justify-content-center">
+                    <div class="card card1" style="width: 25rem;">
+                        <img src="../Imágenes/robotica.jpg" class="card1-inicio" alt="Robótica">
+                        <div class="card-body">
+                            <h5 class="card-title card-title-inicio">Robótica</h5>
+                            <p class="card-text">La robótica es la rama de la ingeniería mecánica, de la ingeniería electrónica y de las ciencias de la computación, que
+                            se ocupa del diseño, construcción, operación, estructura, manufactura y aplicación de los
+                            robots.</p>
+                            <a href="#" class="btn-p">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <!--Fin de Segunda Sección-->
 
     <!--Tercera sección-->
@@ -99,13 +129,27 @@
     <section class="tercera-seccion-sec" id="tercera-seccion">
         <div id="seccion-izq-sec" class="mitad">
             <div class="actividades-sec">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nesciunt explicabo architecto quo minima ullam tempora ut inventore quisquam dignissimos tenetur asperiores, omnis fugit enim facere itaque praesentium quos! Obcaecati?</p>
+                <p>A nivel general, la noción de actividad alude al movimiento, el quehacer o el proceso vinculado a un cierto sector o
+                ámbito. De este modo, puede hablarse de actividad laboral, actividad volcánica, actividad física, actividad cultural y
+                muchas otras.</p>
                 <img src="../Imágenes/carusel1.jpg" class="act-sec" alt="actividades">
             </div>
         </div>
         <div id="seccion-der-sec" class="mitad">
             <div class="mas-actividades-sec">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, tempora ipsum, magni dolorem vitae repellendus nam, voluptas ut deleniti officiis voluptates suscipit eos. Veniam cum quae hic minima qui odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et rerum totam fuga facere dolorum non saepe dolore deserunt accusantium. Voluptate ad, quas velit nulla earum sunt id eveniet autem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos. Perspiciatis maxime sint, cupiditate recusandae non, ratione, aut repellendus ea earum enim quisquam in. Ea a voluptate minus similique illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eos a pariatur voluptate aliquam illo illum enim laboriosam nemo voluptatum nulla quae reiciendis delectus aperiam, porro fuga error hic facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <p>La inclusión es la actitud, tendencia o política de integrar a todas las personas en la sociedad, con el objetivo de que
+                estas puedan participar y contribuir en ella y beneficiarse en este proceso. La palabra, como tal, proviene del latín
+                inclusio, inclusiōnis.
+                
+                La inclusión busca lograr que todos los individuos o grupos sociales, sobre todo aquellos que se encuentran en
+                condiciones de segregación o marginación, puedan tener las mismas posibilidades y oportunidades para realizarse como
+                individuos.
+                
+                La inclusión se formula como solución al problema de la exclusión que es causado por circunstancias como la pobreza, el
+                analfabetismo, la segregación étnica o religiosa, entre otras cosas.
+                
+                Para algunos autores, es el Estado, a través de sus instituciones, el organismo que debe implementar planes y políticas
+                para corregir estas situaciones y propiciar la inclusión y el bienestar social.</p>
             </div>
         </div>
     </section>
@@ -140,11 +184,9 @@
     <!--Footer-->
     
     <footer>
-        <div id="seccion-izq" class="mitad">
-            <a href="../index.html">
-                <img src="../Imágenes/iconos/Logo.png" class="logo2" alt="logo">
-            </a>
-        </div>
+        <a href="../index.html">
+            <img src="../Imágenes/iconos/Logo.png" class="logo2" alt="logo">
+        </a>
         <div id="seccion-cen" class="mitad">
             <h5>Seguinos en:</h5>
             <div class="redes">
@@ -158,10 +200,10 @@
         </div>
         <div id="seccion-der" class="mitad">
             <h5 class="info">+ INFO</h5>
-            <a href="#">lorem ipsum dolor sit</a>
-            <a href="#">lorem ipsum dolor sit</a>
-            <a href="#">lorem ipsum dolor sit</a>
-            <a href="#">lorem ipsum dolor sit</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">¿Qué cuentan las ovejas para dormir?</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">¿Hay una sola moral?</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">¿Existe realmente el alma?</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">¿Por qué llevaban casco los kamikazes?</a>
         </div>
     </footer>
     

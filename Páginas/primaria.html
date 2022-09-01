@@ -7,26 +7,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/estilos.css">
     <title>Colegiogenerico</title>
 </head>
 <body>
     <!--navbar-->
     <header>
-        <nav>
-            <div class="logo__nav">
-                <a href="../index.html">
-                    <img src="../Imágenes/iconos/Logo.png" class="logo1" alt="logo">
-                </a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo__nav">
+                    <a href="../index.html">
+                        <img src="../Imágenes/iconos/Logo.png" class="logo1" alt="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page"
+                                href="../Páginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page"
+                                href="../Páginas/primaria.html">Primaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page"
+                                href="../Páginas/secundaria.html">Secundaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page"
+                                href="../Páginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li> <a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./primaria.html">Primaria</a></li>
-                <li><a href="./secundaria.html">Secundaria</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
         </nav>
     </header>
     <!--fin de navbar-->
@@ -49,35 +75,54 @@
 
     <!--Segunda sección-->
 
-    <section class="segunda-seccion-primaria" id="segunda-seccion-primaria">
-    <div id="seccion-izq-pri">
-        <div class="tm">
-            <h3 class="tur-man">Turno Mañana</h3>
-            <p class="text-mañana">La mañana se inicia con el amanecer y finaliza al mediodía. De este modo, llega después de la madrugada y se extiende hasta que empieza la tarde. Aquellas actividades que tienen lugar en este periodo son matutinas.</p>
-            <h4 class="tur-hor">Horarios</h4>
-            <p class="horario-mañana">8:00 a 12:00</p>
+    <section>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-12 col-md-12 col-xl-6 col-xxl-6 d-flex justify-content-center">
+                    <div class="segunda-seccion-primaria" style="width: 78rem;">
+                        <div id="seccion-izq-pri">
+                            <div class="tm">
+                                <h3 class="tur-man">Turno Mañana</h3>
+                                <p class="text-mañana">La mañana se inicia con el amanecer y finaliza al mediodía. De este modo, llega después
+                                de la madrugada y se extiende hasta que empieza la tarde. Aquellas actividades que tienen lugar en este
+                                periodo son matutinas.</p>
+                                <h4 class="tur-hor">Horarios</h4>
+                                <p class="horario-mañana">8:00 a 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-12 col-xl-6 col-xxl-6 d-flex justify-content-center">
+                    <div class="segunda-seccion-primaria" style="width: 78rem;">
+                        <div id="seccion-der-pri">
+                            <div class="tt">
+                                <h3 class="tur-man">Turno Tarde</h3>
+                                <p class="text-mañana">El turno vespertino es aquel que se desarrolla durante las horas de la tarde o después de
+                                la mañana. El término vespertino es un derivado del latín vesper, que significa precisamente “tarde”.</p>
+                                <h4 class="tur-hor">Horarios</h4>
+                                <p class="horario-mañana">13:00 a 17:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
         </div>
-    </div>
-    <div id="seccion-der-pri">
-        <div class="tt">
-            <h3 class="tur-man">Turno Tarde</h3>
-            <p class="text-mañana">El turno vespertino es aquel que se desarrolla durante las horas de la tarde o después de la mañana. El término vespertino es un derivado del latín vesper, que significa precisamente “tarde”.</p>
-            <br>
-            <h4 class="tur-hor">Horarios</h4>
-            <p class="horario-mañana">13:00 a 17:00</p>
-        </div>
-    </div>
     </section>
     
     <!--Fin de Segunda sección-->
 
     <!--Tercera sección-->
     <h3 class="actividades-cul">Actividades culturales, académicas y cognitivas</h3>
+
     <section class="tercera-seccion-primaria">
         <div id="seccion-izq-act" class="mitad">
             <div class="actividades"> 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nesciunt explicabo architecto quo minima ullam tempora ut inventore quisquam dignissimos tenetur asperiores, omnis fugit enim facere itaque praesentium quos! Obcaecati?</p>
-                <img src="../Imágenes/carusel1.jpg" class="img-act" alt="actividades">    
+                <p>A nivel general, la noción de actividad alude al movimiento, el quehacer o el proceso vinculado a un cierto sector o
+                ámbito. De este modo, puede hablarse de actividad laboral, actividad volcánica, actividad física, actividad cultural y
+                muchas otras.</p>
+                <img src="../Imágenes/pintada-primaria.jpg" class="img-act" alt="actividades">    
             </div>
         </div>
         <div id="seccion-der-act" class="mitad">
@@ -100,11 +145,9 @@
     <!--Footer-->
     
     <footer>
-        <div id="seccion-izq" class="mitad">
-            <a href="../index.html">
-                <img src="../Imágenes/iconos/Logo.png" class="logo2" alt="logo">
-            </a>
-        </div>
+        <a href="../index.html">
+            <img src="../Imágenes/iconos/Logo.png" class="logo2" alt="logo">
+        </a>
         <div id="seccion-cen" class="mitad">
             <h5>Seguinos en:</h5>
             <div class="redes">
@@ -118,10 +161,10 @@
         </div>
         <div id="seccion-der" class="mitad">
             <h5 class="info">+ INFO</h5>
-            <a href="#">lorem ipsum dolor sit</a>
-            <a href="#">lorem ipsum dolor sit</a>
-            <a href="#">lorem ipsum dolor sit</a>
-            <a href="#">lorem ipsum dolor sit</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">¿Qué cuentan las ovejas para dormir?</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">¿Hay una sola moral?</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">¿Existe realmente el alma?</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">¿Por qué llevaban casco los kamikazes?</a>
         </div>
     </footer>
     

@@ -1,4 +1,4 @@
-/*-index-(4-354)-*/ /*-primaria-(356-521)-*/ /*-secundaria-(523-664)-*/ /*-nosotros-(666-780)-*/ /*-contacto-(784-850)-*/ /*-footer-(852-898)-*/ /* mobile de 320px a 425px (953-1329)*/ /* - mobile de 425px a 768px(1334-1659)-*/ /* - mobile de 768px a 1440px(1660 -1860)-*/
+/*-index-(4-354)-*/ /*-primaria-(356-545)-*/ /*-secundaria-(549-729)-*/ /*-nosotros-(731-845)-*/ /*-contacto-(847-943)-*/ /*-footer-(945-997)-*/ /* mobile de 320px a 425px (999-1328)*/ /* - mobile de 425px a 768px(1330-1637)-*/ /* - mobile de 768px a 1440px(1639 -1856)-*/
 
 * {
     padding: 0;
@@ -9,7 +9,7 @@ h3 {
     font-family: 'montserrat', sans-serif;
     text-transform: uppercase;
     text-shadow: 4px 4px 7px rgba(58, 58, 58, 0);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 650;
     color: rgb(22, 101, 170);
     text-align: center;
@@ -43,6 +43,10 @@ header {
     --bs-navbar-toggler-border-color: rgb(195 0 0 / 0%);
 }
 
+.navbar-toggler {
+    color: rgb(23, 42, 119, 0%);
+}
+
 ul {
     display: flex;
     justify-content: end;
@@ -72,6 +76,7 @@ li {
 .navbar-nav .show>.nav-link {
     color: #172a77;
 }
+
 header ul li a {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -80,11 +85,12 @@ header ul li a {
     font-weight: 700;
     border-bottom: 2px solid transparent;
     padding: 4px 0;
-    transition: 0.7s ease-out;
+    transition: 0.4s ease-out;
 }
 
 header ul li a:hover {
     border-bottom: 1px solid rgb(23, 42, 119);
+    transition: all 400ms ease;
 }
 
 /* fin de navbar*/
@@ -400,11 +406,11 @@ header ul li a:hover {
 }
 
 #seccion-izq-pri {
-    width: 30%;
+    width: 50%;
 }
 
 #seccion-der-pri {
-    width: 30%;
+    width: 50%;
 }
 
 .tur-man{
@@ -508,8 +514,8 @@ header ul li a:hover {
 .actividades p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
-    width: 80%;
-    padding: 2rem;
+    width: 77%;
+    padding-top: 2rem;
 }
 
 .mas-actividades a{
@@ -620,18 +626,23 @@ header ul li a:hover {
 
 .act-sec {
     width: 42vw;
-    padding-left: 5rem;
 }
 
 #seccion-der-sec {
     width: 50%;
 }
 
+.actividades-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .actividades-sec p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding: 2rem;
+    padding-top: 1.8rem;
+    width: 80%;
 }
 
 
@@ -649,15 +660,36 @@ header ul li a:hover {
     width: 27rem;
 }
 
+.uba:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .unlam {
     width: 15rem;
 }
+
+.unlam:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .unlp {
     width: 14rem;
 }
 
+.unlp:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .unpaz {
     width: 23rem;
+}
+
+.unpaz:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
 }
 
 .unsam {
@@ -665,12 +697,27 @@ header ul li a:hover {
     padding-left: 10rem;
 }
 
+.unsam:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .untref {
     width: 20rem;
 }
 
+.untref:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
+}
+
 .utn {
     width: 20rem;
+}
+
+.utn:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
 }
 
 .cuarto-contenido-sec {
@@ -804,11 +851,10 @@ header ul li a:hover {
 .primera-seccion-contacto {
     background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/contacto.jpg') no-repeat center/cover;
     background-attachment: fixed;
-    height: 75vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
 }
 
 #primer-contenido-contacto>h1 {
@@ -837,12 +883,14 @@ header ul li a:hover {
 }
 
 #seccion-izq-con {
-    width: 45%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #seccion-der-con {
     width: 50%;
-    padding-bottom: 4rem;
 }
 
 .mapita {
@@ -862,6 +910,32 @@ h6 {
 
 .contacto{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.covid {
+    width: 80%;
+}
+
+.form-piola {
+    color: rgba(71, 98, 207, 1);
+    font-family: 'Helvetica', sans-serif;
+    text-shadow: none;
+}
+
+.form-control {
+    font-size: 1.5rem;
+}
+
+.mb-4 {
+    width: 70%;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*fin de Tercera sección*/
@@ -1780,4 +1854,3 @@ footer {
 }
 
 /* fin de responsive de 768px - 1440 */
-
