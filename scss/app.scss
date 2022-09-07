@@ -1,3 +1,4 @@
+@import './media-Query/mediaquerie.scss';
 @import './super-navbar/nav.scss';
 @import './footer/footer.scss';
 @import './Páginas/Inicio.scss';
@@ -16,11 +17,14 @@ h3 {
     font-family: 'montserrat', sans-serif;
     text-transform: uppercase;
     text-shadow: 4px 4px 7px rgba(58, 58, 58, 0);
-    font-size: 2.3rem;
     font-weight: 650;
     color: rgb(22, 101, 170);
     text-align: center;
     margin: 4rem;
+}
+
+.h3, h3 {
+    font-size: calc(1.3rem + 0.9vw);
 }
 
 h4 {
@@ -32,4 +36,21 @@ h4 {
     color: rgb(22, 101, 170);
     text-align: center;
     margin: 4rem;
+}
+
+h6 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
+    font-size: 2rem;
+    font-weight: 650;
+    color: rgb(22, 101, 170);
+    text-align: center;
+    margin: 2rem;
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+    h3 {
+        font-size: x-larger;
+    }
 }
