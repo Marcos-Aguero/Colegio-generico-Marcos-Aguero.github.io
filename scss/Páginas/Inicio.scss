@@ -1,0 +1,243 @@
+/* primera seccion */
+
+.primera-seccion-inicio {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/portada.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #primer-contenido-inicio>p {
+        text-transform: capitalize;
+        font-family: 'montserrat', sans-serif;
+        font-size: calc(1rem + 0.3vw);
+        text-shadow: 7px 7px 7px black;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #primer-contenido-inicio>h1 {
+        font-family: 'montserrat', sans-serif;
+        text-transform: uppercase;
+        text-shadow: 7px 7px 7px black;
+        font-size: calc(1.375rem + 1.5vw);
+        font-weight: 700;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+/* fin de primera seccion */
+
+/* segunda seccion */
+
+.card1-inicio {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card1 {
+    background-color: rgba(22, 21, 105, 0.082);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem;
+    width: 20vw;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card1:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card-title-inicio {
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: large;
+        color: rgb(23, 42, 119);
+        text-align: center;
+        padding: 1.5rem 0rem;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        border-radius: 4px;
+        background: rgb(216, 224, 255);
+        border: 1px solid rgb(23, 42, 119);
+        color: rgb(23, 42, 119);
+        padding: 0.7rem;
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        transition: all 400ms ease;
+        &:hover {
+            background: rgb(23, 42, 119);
+            color: #faf6f0;
+        }
+    }
+}
+
+/*fin de segunda seccion*/
+
+/* tercera seccion */
+
+.tercera-seccion-inicio {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/historia.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "tercer-contenido-inicio tercer-contenido-inicio"
+        "seccion-izq-historia seccion-der-historia "
+        "seccion-izq-historia seccion-der-historia "
+        "seccion-izq-historia seccion-der-historia "
+    ;
+    justify-items: center;
+
+    .tercer-contenido-inicio {
+        grid-area: tercer-contenido-inicio;
+        .historia {
+            color: #ffffff;
+            text-shadow: 7px 7px 7px black;
+        }
+    }
+
+    #seccion-izq-historia {
+        grid-area: seccion-izq-historia;
+        grid-row: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3dfbf91;
+        border-radius: 6px;
+        margin: 0 6rem;
+        p {
+            text-transform: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 40px;
+            color: rgb(23, 42, 119);
+            text-align: justify;
+            font-size: large;
+            font-weight: 500;
+            padding: 2rem;
+        }
+    }
+
+    #seccion-der-historia {
+        grid-area: seccion-der-historia;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        .logo3 {
+            width: 80%;
+        }
+    }
+}
+
+/*fin de tercera seccion*/
+
+/*cuarta seccion*/
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 12rem;
+    height: 3rem;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 95%;
+
+    .d-block {
+        width: 100vw;
+    }
+
+}
+
+/* fin de cuarta seccion */
+
+/* quinta seccion */
+
+.quinta-seccion-inicio {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/contacto.jpg') no-repeat center/cover;
+    color: white;
+    text-shadow: 2px 2px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "quinto-contenido-inicio quinto-contenido-inicio"
+        "seccion-izq-contacto seccion-der-contacto "
+        "seccion-izq-contacto seccion-der-contacto "
+        "seccion-izq-contacto seccion-der-contacto "
+    ;
+    justify-items: center;
+    .quinto-contenido-inicio {
+        grid-area: quinto-contenido-inicio;
+    }
+    #seccion-der-contacto {
+        grid-area: seccion-der-contacto;
+        width: 90%;
+        grid-row: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #seccion-izq-contacto {
+        grid-area: seccion-izq-contacto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        width: 90%;
+        grid-row: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mb-33 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .enviar {
+            background-color: rgb(33, 68, 206);
+            color: #faf6f0;
+            border-color: #faf6f0;
+            padding: 1.3rem;
+            text-transform: uppercase;
+            font-family: 'montserrat', sans-serif;
+            font-size: medium;
+            position: relative;
+            margin-top: 4rem;
+
+        }
+    }
+
+}
+
+/*fin de quinta seccion*/

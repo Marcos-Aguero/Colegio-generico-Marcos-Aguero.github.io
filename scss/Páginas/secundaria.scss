@@ -1,0 +1,179 @@
+/* primera seccion */
+
+.primera-seccion-secundaria {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/secundaria.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#primer-contenido-secundaria>h1 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px black;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* fin de primara seccion */
+
+/* segunda seccion */
+
+.segundo-contenido-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #b0d0f5;
+    padding-bottom: 4rem;
+}
+
+.segunda-seccion-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.segundo-contenido-sec p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: justify;
+}
+
+/* fin de segunda seccion */
+
+/* tercera seccion */
+
+.tercera-seccion-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    background-color: #f3dfbf;
+}
+
+.mas-actividades-sec {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mas-actividades-sec p {
+    width: 43%;
+    letter-spacing: normal;
+}
+
+#seccion-izq-sec {
+    width: 50%;
+}
+
+.act-sec {
+    width: 42vw;
+}
+
+#seccion-der-sec {
+    width: 50%;
+}
+
+.actividades-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actividades-sec p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 1.8rem;
+    width: 80%;
+}
+
+
+/* fin de tercera seccion */
+
+/* cuarta seccion */
+
+.cuarta-seccion-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uba {
+    width: 27rem;
+}
+
+.uba:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.unlam {
+    width: 15rem;
+}
+
+.unlam:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.unlp {
+    width: 14rem;
+}
+
+.unlp:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.unpaz {
+    width: 23rem;
+}
+
+.unpaz:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.unsam {
+    width: 23rem;
+    padding-left: 10rem;
+}
+
+.unsam:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.untref {
+    width: 20rem;
+}
+
+.untref:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.utn {
+    width: 20rem;
+}
+
+.utn:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.cuarto-contenido-sec {
+    margin-bottom: 5rem;
+}
+
+/* fin de cuarta seccion */

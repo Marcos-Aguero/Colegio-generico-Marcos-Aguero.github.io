@@ -18,48 +18,30 @@
     <!--animacion con scroll-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--estilos-->
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Colegiogenerico</title>
 </head>
 <body>
     <!--navbar-->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="logo__nav">
-                    <a href="../index.html">
-                        <img src="../Imágenes/iconos/Logo.png" class="logo1" alt="logo">
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fw-semibold" aria-current="page"
-                                href="../Páginas/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fw-semibold" aria-current="page"
-                                href="../Páginas/primaria.html">Primaria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fw-semibold" aria-current="page"
-                                href="../Páginas/secundaria.html">Secundaria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fw-semibold" aria-current="page"
-                                href="../Páginas/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <header class="main-header">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="../Imágenes/iconos/Logo.png" class="loguito" alt="Logo">
+            </a>
+        </div>
+    
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="menu-icon__line"></span>
+        </label>
+    
+        <ul class="nav-links">
+            <li class="nav-link"><a href="../index.html">Inicio</a></li>
+            <li class="nav-link"><a href="../Páginas/nosotros.html">Nosotros</a></li>
+            <li class="nav-link"><a href="../Páginas/primaria.html">Primaria</a></li>
+            <li class="nav-link"><a href="../Páginas/secundaria.html">Secundaria</a></li>
+            <li class="nav-link"><a href="../Páginas/contacto.html">Contacto</a></li>
+        </ul>
     </header>
     <!--fin de navbar-->
 
@@ -90,8 +72,7 @@
                             <div class="tm">
                                 <h3 class="tur-man">Turno Mañana</h3>
                                 <p class="text-mañana">La mañana se inicia con el amanecer y finaliza al mediodía. De este modo, llega después
-                                de la madrugada y se extiende hasta que empieza la tarde. Aquellas actividades que tienen lugar en este
-                                periodo son matutinas.</p>
+                                de la madrugada y se extiende hasta que empieza la tarde.</p>
                                 <h4 class="tur-hor">Horarios</h4>
                                 <p class="horario-mañana">8:00 a 12:00</p>
                             </div>
@@ -105,7 +86,7 @@
                             <div class="tt">
                                 <h3 class="tur-man">Turno Tarde</h3>
                                 <p class="text-mañana">El turno vespertino es aquel que se desarrolla durante las horas de la tarde o después de
-                                la mañana. El término vespertino es un derivado del latín vesper, que significa precisamente “tarde”.</p>
+                                la mañana. El término vespertino es un derivado del latín vesper.</p>
                                 <h4 class="tur-hor">Horarios</h4>
                                 <p class="horario-mañana">13:00 a 17:00</p>
                             </div>
@@ -185,5 +166,7 @@
         });
     </script>
     
+    <!--js de nav-->
+    <script src="../Scripts/main.js"></script>
 </body>
 </html>
