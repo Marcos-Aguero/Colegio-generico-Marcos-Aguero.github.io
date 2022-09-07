@@ -4,23 +4,6 @@
 
 @media screen and (min-width:320px) and (max-width:425px) {
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding-right: 0;
-    }
-
-    header ul li a {
-        font-size: small;
-    }
-
-    .logo__nav {
-        padding-right: 3%;
-    }
-
     #primer-contenido-inicio>h1 {
         font-size: x-large;
     }
@@ -344,37 +327,9 @@
 
 /* - responsive de 425px a 768px - */
 
-@media screen and (min-width:425px) and (max-width:564px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding-right: 0;
-    }
-
-    header ul li a {
-        font-size: small;
-    }
-
-    .logo__nav {
-        padding-right: 3%;
-    }
-}
-
 @media screen and (min-width:425px) and (max-width:767px) {
 
     /* index */
-
-    header ul li a {
-        font-size: small;
-    }
 
     #primer-contenido-inicio>h1 {
         font-size: xx-large;
@@ -661,20 +616,6 @@
 
 @media screen and (min-width:768px) and (max-width:1440px) {
 
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    ul {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .logo__nav {
-        padding-left: 0;
-    }
 
     #seccion-der-contacto {
         display: none;

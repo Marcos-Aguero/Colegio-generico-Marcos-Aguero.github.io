@@ -1,11 +1,11 @@
 @import './super-navbar/nav.scss';
+@import './footer/footer.scss';
 @import './Páginas/Inicio.scss';
-@import './media-Query/mediaquerie.scss';
 @import './Páginas/primaria.scss';
 @import './Páginas/secundaria.scss';
 @import './Páginas/nosotros.scss';
 @import './Páginas/contacto.scss';
-
+@import './media-Query/mediaquerie.scss';
 /*  configuraciones generales  */
 * {
     padding: 0;
@@ -33,57 +33,3 @@ h4 {
     text-align: center;
     margin: 4rem;
 }
-
-/*  footer  */
-
-footer {
-    background-color: #f3dfbf;
-    color: rgb(33, 68, 206);
-    font-family: 'montserrat', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.logo2 {
-    width: 30%;
-    margin-left: 12rem;
-}
-
-.redes {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.face {
-    width: 2rem;
-}
-
-.info {
-    padding-bottom: 0.5rem;
-}
-
-#seccion-cen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1.5rem;
-}
-
-#seccion-der {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 9.5rem;
-}
-
-#seccion-der a {
-    position: relative;
-    display: block;
-    text-decoration: none;
-    padding: 0.4rem;
-}
-
-/*fin del footer*/
