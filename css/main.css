@@ -166,7 +166,7 @@
 
 /* - fin de secundaria - */
 /* - contacto - */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #primer-contenido-contacto > h1 {
     font-size: x-large; }
   .tercera-seccion-contacto {
@@ -174,8 +174,8 @@
     justify-content: center; }
     .tercera-seccion-contacto #seccion-izq-con {
       display: none; }
-  #seccion-der-con {
-    width: 90%; } }
+    .tercera-seccion-contacto #seccion-der-con {
+      width: 90%; } }
 
 /* - fin de contacto - */
 /* - responsive de 425px a 768px - */
@@ -1506,7 +1506,7 @@ footer {
 
 /* - fin de secundaria - */
 /* - contacto - */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #primer-contenido-contacto > h1 {
     font-size: x-large; }
   .tercera-seccion-contacto {
@@ -1514,8 +1514,8 @@ footer {
     justify-content: center; }
     .tercera-seccion-contacto #seccion-izq-con {
       display: none; }
-  #seccion-der-con {
-    width: 90%; } }
+    .tercera-seccion-contacto #seccion-der-con {
+      width: 90%; } }
 
 /* - fin de contacto - */
 /* - responsive de 425px a 768px - */
