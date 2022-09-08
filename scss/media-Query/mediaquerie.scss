@@ -298,294 +298,275 @@
 
 /* - fin de contacto - */
 
+/* - fin de estilos mobile 320px a 425px- */
+
 /* - responsive de 425px a 768px - */
 
-@media screen and (min-width:425px) and (max-width:767px) {
-
-    /* index */
-
-    #primer-contenido-inicio>h1 {
-        font-size: xx-large;
+@mixin tablet {
+    @media screen and (min-width:425px) and (max-width:767px){
+        @content
     }
+}
 
-    #primer-contenido-inicio>p {
-        font-size: large;
-    }
+/* index */
 
-    h3 {
+h3 {
+    @include tablet{
         font-size: x-large;
     }
+}
 
-    .segunda-seccion-inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 5%;
-    }
-
-    .card1 {
+.card1 {
+    @include tablet {
         width: 77%;
         display: flex;
         flex-direction: column;
         align-items: center;
         background: rgba(22, 21, 105, 0.233);
     }
+}
 
-    .card-body-inicio {
-        width: 100%;
-    }
-
-    .card-body-inicio p {
-        width: 100%;
-    }
-
-    .card-body-inicio a {
-        width: 35%;
-    }
-
-    .tercer-contenido-inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tercera-seccion-inicio {
+.tercera-seccion-inicio {
+    @include tablet {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-
+    .tercer-contenido-inicio {
+        @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;}
+    }
     #seccion-der-historia {
-        display: none;
+        @include tablet {
+            display: none;
+        }
     }
-
     #seccion-izq-historia {
-        width: 85%;
-        margin: auto;
+        @include tablet {
+            width: 85%;
+            margin: auto;
+        }
+        p {
+            @include tablet{
+                font-size: 14px;
+            line-height: 27px;
+            padding: 10%;
+            }
+        }
     }
+}
 
-    #seccion-izq-historia p {
-        font-size: 14px;
-        line-height: 27px;
-        padding: 10%;
-    }
-
-    .quinta-seccion-inicio {
+.quinta-seccion-inicio {
+    @include tablet {
         display: flex;
         flex-direction: column;
-    }
-
-    #seccion-der-contacto {
-        display: none;
-    }
-
-    #seccion-izq-contacto {
-        width: 100%;
-        padding: 2rem;
-    }
-
-    #seccion-izq-contacto p {
-        padding: 5%;
-    }
-
-    #seccion-der-contacto {
-        display: none;
-    }
-
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
-
-    .nombre {
-        padding: 0;
-        padding-left: 20%;
+        
+    #seccion-der-contacto {
+        @include tablet {
+            display: none;
+        }
     }
-
-    .email {
-        padding: 0;
-        padding-left: 20%;
+    #seccion-izq-contacto{ 
+        @include tablet {
+            width: 100%;
+            padding: 2rem;
+        }
+        p {
+            @include tablet{
+            padding: 5%;
+            }
+        }
     }
+}    
 
-    .mens {
-        padding: 0;
-    }
-
-    .mensaje {
-        padding-right: 10%;
-    }
-
-    textarea#texto {
-        margin: 0;
-        min-width: 130%;
-        max-width: 130%;
-    }
-
-    .fieldset {
-        width: 20px;
-    }
-
-    .enviar {
-        width: 25%;
-        margin: 0;
-        padding: 0.3rem;
-        font-size: small;
-        margin-top: 12px;
-        margin-left: 35%;
-    }
-
-    footer {
+footer {
+    @include tablet{
         display: flex;
         flex-direction: column;
         font-size: 90%;
     }
-
     #seccion-der {
-        display: none;
+        @include tablet{
+            display: none;
+        }
     }
-
-    .logo2 {
-        display: none;
-    }
-
     #seccion-cen {
-        padding-bottom: 1.5rem;
+        @include tablet{
+            padding-bottom: 1.5rem;
+        }
     }
+    .logo2 {
+        @include tablet{
+            display: none;
+        }
+    }
+}
 
-    /* nosotros */
+/* Nosotros */
 
-    #primer-contenido-nosotros>h1 {
+#primer-contenido-nosotros>h1 {
+    @include tablet {
         font-size: xx-large;
     }
+}
 
-    #primer-contenido-nosotros>p {
+#primer-contenido-nosotros>p {
+    @include tablet {
         font-size: large;
     }
+}
 
-    .segunda-seccion-nos {
+.segunda-seccion-nos {
+    @include tablet{
         display: flex;
         flex-direction: column;
     }
-
     .mision {
-        width: 70vw;
+        @include tablet {
+            width: 70vw;
+        }
     }
-
     #seccion-der-nos {
-        width: 70vw;
-        margin-top: 2rem;
+        @include tablet {
+            width: 70vw;
+            margin-top: 2rem;
+        } 
     }
+}
 
-    .tercera-seccion-nos p {
+.tercera-seccion-nos p {
+    @include tablet {
         width: 100%;
     }
+}
 
-    .cuarta-seccion-nos {
+.cuarta-seccion-nos {
+    @include tablet {
         display: flex;
         flex-direction: column;
     }
+}
 
-    /* primaria */
+/* primaria */
 
-    #primer-contenido-primaria>h1 {
+#primer-contenido-primaria>h1 {
+    @include tablet {
         font-size: xx-large;
     }
+}
 
-    #primer-contenido-primaria>p {
+#primer-contenido-primaria>p {
+    @include tablet {
         font-size: large;
     }
+}
 
-    .segunda-seccion-primaria {
+.segunda-seccion-primaria {
+    @include tablet {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    #seccion-izq-pri {
-        width: 86%;
+    #seccion-izq-pri, #seccion-der-pri{
+        @include tablet {
+            width: 86%;
+        }
+        
     }
+}
 
-    #seccion-der-pri {
-        width: 86%;
-    }
+/* secundaria*/
 
-    /* secudnaria*/
-
-    #primer-contenido-secundaria>h1 {
+#primer-contenido-secundaria>h1 {
+    @include tablet {
         font-size: xx-large;
     }
+}
 
-    .segunda-seccion-sec {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #seccion-der-sec {
+#seccion-der-sec {
+    @include tablet {
         display: none;
     }
+}
 
-    .actividades-sec {
+.actividades-sec {
+    @include tablet {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .actividades-sec p {
-        width: 100%;
+    p {
+        @include tablet {
+            width: 100%;
+        }
     }
-
     .act-sec {
-        padding-left: 0;
+        @include tablet {
+            padding-left: 0;
         width: 64vw;
+        }
     }
+}
 
-
-    .arriba {
+.arriba {
+    @include tablet {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+    .uba {
+        @include tablet {
+            width: 70%;
+        padding-left: 15%;
+        }
+    }
+    .untref {
+        @include tablet {
+            width: 70%;
+        padding-left: 15%;
+        }
+    }
+}
 
-    .abajo {
+.abajo {
+    @include tablet {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .uba {
-        width: 70%;
-        padding-left: 15%;
-    }
-
     .unpaz {
-        width: 70%;
+        @include tablet {
+            width: 70%;
         padding-left: 15%;
+        }
     }
 
     .unsam {
-        width: 70%;
+        @include tablet {
+            width: 70%;
         padding-left: 15%;
-    }
-
-    .untref {
-        width: 70%;
-        padding-left: 15%;
+        }
     }
 
     .utn {
-        width: 70%;
+        @include tablet {
+            width: 70%;
         padding-left: 15%;
+        }
     }
 }
 
 /* - responsive de 425px a 768px - */
 
 /* responsive de  768px - 1440px */
+
+
 
 @media screen and (min-width:768px) and (max-width:1440px) {
 
