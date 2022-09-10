@@ -13,6 +13,7 @@
 @import './Páginas/secundaria.scss';
 @import './Páginas/nosotros.scss';
 @import './Páginas/contacto.scss';
+@import './media-Query/mediaquerie.scss';
 
 /*  configuraciones generales  */
 
@@ -20,38 +21,30 @@
     padding: 0;
     margin: 0;
 }
-
-h3 {
+.h-generales {
     font-family: 'montserrat', sans-serif;
     text-transform: uppercase;
-    text-shadow: 4px 4px 7px rgba(58, 58, 58, 0);
-    font-weight: 650;
     color: map-get($color, tercero);
+    font-weight: 650;
     text-align: center;
+}
+h3 {
+    @extend .h-generales;
+    text-shadow: 4px 4px 7px rgba(58, 58, 58, 0);
     margin: 4rem;
     &:h3 {
         font-size: calc(1.3rem + 0.9vw);
     }
 }
-
 h4 {
-    font-family: 'montserrat', sans-serif;
-    text-transform: uppercase;
+    @extend .h-generales;
     text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
     font-size: 2rem;
-    font-weight: 650;
-    color: map-get($color, tercero);
-    text-align: center;
     margin: 4rem;
 }
-
 h6 {
-    font-family: 'montserrat', sans-serif;
-    text-transform: uppercase;
+    @extend .h-generales;
     text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
     font-size: 2rem;
-    font-weight: 650;
-    color: map-get($color, tercero);
-    text-align: center;
     margin: 2rem;
 }
