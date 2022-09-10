@@ -1,148 +1,193 @@
-
+/* mobile : 3 - 355 */ /* tablet : 357 - 619*/ /* desktop : 621 - 829*/ /* extras de contacto : 831 - 849*/
 
 /* - estilos mobile 320px a 425px- */
 
+@mixin mobile {
+    @media screen and (min-width:320px) and (max-width:425px) {
+        @content
+    }
+} 
+
 /* - index - */
 
-
-@media screen and (min-width:320px) and (max-width:425px) {
-
-    #primer-contenido-inicio>h1 {
-        font-size: x-large;
+#primer-contenido-inicio{
+    &>h1 {
+        @include mobile {
+            font-size: x-large;
+        }
     }
-
-    #primer-contenido-inicio p {
-        font-size: medium;
+    &>p {
+        @include mobile {
+            font-size: medium;
+        }
     }
+}
 
-    .card1 {
+.card1 {
+    @include mobile {
         width: 77%;
         display: flex;
         flex-direction: column;
         align-items: center;
         background: rgba(22, 21, 105, 0.233);
-
-        .card-body a {
-        width: 44%;
+    }
+    .card-body a {
+        @include mobile {
+            width: fit-content;
         }
     }
+}
 
-    .tercera-seccion-inicio {
+.tercera-seccion-inicio {
+    @include mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        #seccion-der-historia {
+    }
+    #seccion-der-historia {
+        @include mobile {
             display: none;
         }
-
+    }
     #seccion-izq-historia {
+        @include mobile {
             width: 85%;
             margin: auto;
-            p {
+        }    
+        p {
+            @include mobile {
                 font-size: 14px;
                 line-height: 27px;
-                padding: 10%; 
-            }
+                padding: 10%;
+            }     
         }
     }
+}
 
-    .carousel-inner {
+.carousel-inner {
+    @include mobile {
         display: grid;
         grid-template-columns: 100%;
         margin-left: 0;
-
-        .d-block {
+    }
+    .d-block {
+        @include mobile {
             width: 100vw;
         }
     }
+}
 
-    .quinta-seccion-inicio {
+.quinta-seccion-inicio {
+    @include mobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        #seccion-izq-contacto {
+    }
+        
+    #seccion-izq-contacto {
+        @include mobile {
             width: 90%;
             padding: 0rem;
-            .enviar {
+        }    
+        .enviar {
+            @include mobile {
                 width: 37%;
                 margin: 0;
                 padding: 0.3rem;
                 font-size: small;
                 margin-top: 12px;
                 margin-left: 50%;
-            }
-        }
-
-    #seccion-der-contacto {
-            display: none;
+            }        
         }
     }
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        font-size: 67%;
-
-        #seccion-der {
+    #seccion-der-contacto {
+        @include mobile {
             display: none;
-        }
-        #seccion-cen {
-            padding-bottom: 1.5rem;
-        }
-        .logo2 {
-            display: none;
-        }
+        }            
     }
 }
 
-/* - fin de index - */
+footer {
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        font-size: 67%;
+    }    
+
+    #seccion-der {
+        @include mobile {
+            display: none;
+        }
+    }
+    #seccion-cen {
+        @include mobile {
+            padding-bottom: 1.5rem;
+        }     
+    }
+    .logo2 {
+        @include mobile {
+            display: none;
+        }        
+    }
+}
+
 
 /* - nosotros - */
 
-@media screen and (min-width:320px) and (max-width:425px) {
-
-    #primer-contenido-nosotros>h1 {
-        font-size: x-large;
+#primer-contenido-nosotros{
+    &>h1 {
+        @include mobile {
+          font-size: x-large;  
+        }
     }
+    &>p {
+        @include mobile {
+            font-size: medium;
+        }
+    }        
+}
 
-    #primer-contenido-nosotros>p {
-        font-size: medium;
-    }
-
-    .segunda-seccion-nos {
+.segunda-seccion-nos {
+    @include mobile {
         display: flex;
         flex-direction: column;
-
-       #seccion-izq-nos {
+    }
+    #seccion-izq-nos {
+        @include mobile {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
-            .mision {
+        }
+            
+        .mision {
+            @include mobile {
                 margin-right: 0;
                 width: 85%;
                 padding: 10%;
-            }
-        } 
-
-        #seccion-der-nos {
+            }      
+        }
+    } 
+    #seccion-der-nos {
+        @include mobile {
             width: 85%;
             margin-top: 2rem;
             padding: 10%;
-        }
-
+        }        
     }
+}
 
-    .tercer-contenido-nos p {
+.tercer-contenido-nos p {
+    @include mobile {
         width: 70%;
     }
+}
 
-    .cuarta-seccion-nos {
+.cuarta-seccion-nos {
+    @include mobile {
         display: flex;
         flex-direction: column;
         width: 88%;
@@ -150,137 +195,642 @@
     }
 }
 
-/* - fin de nosotros - */
-
 /* - primaria - */
 
-@media screen and (min-width:320px) and (max-width:425px) {
-
-    #primer-contenido-primaria>h1 {
-        font-size: x-large;
+#primer-contenido-primaria{
+    &>h1 {
+        @include mobile {
+            font-size: x-large;
+        }       
     }
-
-    #primer-contenido-primaria>p {
-        font-size: medium;
+    &>p {
+        @include mobile {
+            font-size: medium;
+        }
     }
+}
 
-    .segunda-seccion-primaria {
+.segunda-seccion-primaria {
+    @include mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        #seccion-izq-pri {
+    }
+        
+    #seccion-izq-pri {
+        @include mobile {
             width: 90%;
-            .tm>p {
-                padding: 0 10%;
-                font-size: medium;
-            }
         }
-
-        #seccion-der-pri {
-            width: 90%;
-            .tt>p {
+        .tm>p {
+            @include mobile {
                 padding: 0 10%;
                 font-size: medium;
             }
         }
     }
 
-    .tercera-seccion-primaria {
+    #seccion-der-pri {
+        @include mobile {
+            width: 90%;
+        }    
+        .tt>p {
+            @include mobile {
+                padding: 0 10%;
+                font-size: medium;
+            }        
+        }
+    }
+}
+
+.tercera-seccion-primaria {
+    @include mobile {
         display: flex;
         flex-direction: column;
     }
 }
 
-/* - fin de primaria - */
-
 /* - secundaria - */
 
-@media screen and (min-width:320px) and (max-width:425px) {
-
-    #primer-contenido-secundaria>h1 {
+#primer-contenido-secundaria>h1 {
+    @include mobile {
         font-size: x-large;
-    }
+    }     
+}
 
-    .card1 {
+.card1 {
+    @include mobile {
         margin: 5%;
-    }
+    }    
+}
 
-    .segundo-contenido-sec p {
+.segundo-contenido-sec p {
+    @include mobile {
         padding: 8%;
-    }
+    }     
+}
 
-    .tercera-seccion-sec {
-
-        .actividades-sec {
+.tercera-seccion-sec {
+    .actividades-sec {
+        @include mobile {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
-            p {
+        }
+        p {
+            @include mobile {
                 width: 100%;
-            }
-            .act-sec {
+            }            
+        }
+        .act-sec {
+            @include mobile {
                 width: 75vw;
-                padding: 0;
+                    padding: 0;
             }
         }
-        #seccion-der-sec {
+    }
+}
+
+#seccion-der-sec {
+    @include mobile {
+        display: none;
+    }   
+}
+
+
+.cuarta-seccion-sec {
+    .arriba {
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .uba {
+            @include mobile {
+                width: 70%;
+                padding-left: 15%;
+            }        
+        }
+        .untref {
+            @include mobile {
+                width: 70%;
+                padding-left: 15%;
+            }            
+        }
+    }
+    .abajo {
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .unpaz {
+            @include mobile {
+                width: 70%;
+                padding-left: 15%;
+            }    
+        }
+        .unsam {
+            @include mobile {
+                width: 70%;
+                padding-left: 15%;
+            }        
+        }
+        .utn {
+            @include mobile {
+                width: 70%;
+                padding-left: 15%;
+            }            
+        }
+    }
+}
+
+#primer-contenido-contacto>h1 {
+    @include mobile {
+        font-size: x-large;
+    }
+}
+
+/* - fin de estilos mobile 320px a 425px- */
+
+/* - responsive de 425px a 768px - */
+
+@mixin tablet {
+    @media screen and (min-width:425px) and (max-width:767px){
+        @content
+    }
+}
+
+/* index */
+
+h3 {
+    @include tablet{
+        font-size: x-large;
+    }
+}
+
+.card1 {
+    @include tablet {
+        width: 77%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(22, 21, 105, 0.233);
+    }
+}
+
+.tercera-seccion-inicio {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .tercer-contenido-inicio {
+        @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;}
+    }
+    #seccion-der-historia {
+        @include tablet {
             display: none;
         }
     }
-    
-    .cuarta-seccion-sec {
-        .arriba {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .uba {
-                width: 70%;
-                padding-left: 15%;
-            }
-            .untref {
-                width: 70%;
-                padding-left: 15%;
-            }
+    #seccion-izq-historia {
+        @include tablet {
+            width: 85%;
+            margin: auto;
         }
-
-        .abajo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .unpaz {
-                width: 70%;
-                padding-left: 15%;
-            }
-
-            .unsam {
-                width: 70%;
-                padding-left: 15%;
-            }
-
-            .utn {
-                width: 70%;
-                padding-left: 15%;
+        p {
+            @include tablet{
+                font-size: 14px;
+            line-height: 27px;
+            padding: 10%;
             }
         }
     }
-    
 }
 
-/* - fin de secundaria - */
+.quinta-seccion-inicio {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    #seccion-der-contacto {
+        @include tablet {
+            display: none;
+        }
+    }
+    #seccion-izq-contacto{ 
+        @include tablet {
+            width: 100%;
+            padding: 2rem;
+        }
+        p {
+            @include tablet{
+            padding: 5%;
+            }
+        }
+    }
+}    
 
-/* - contacto - */
+footer {
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        font-size: 90%;
+    }
+    #seccion-der {
+        @include tablet{
+            display: none;
+        }
+    }
+    #seccion-cen {
+        @include tablet{
+            padding-bottom: 1.5rem;
+        }
+    }
+    .logo2 {
+        @include tablet{
+            display: none;
+        }
+    }
+}
+
+/* Nosotros */
+
+#primer-contenido-nosotros>h1 {
+    @include tablet {
+        font-size: xx-large;
+    }
+}
+
+#primer-contenido-nosotros>p {
+    @include tablet {
+        font-size: large;
+    }
+}
+
+.segunda-seccion-nos {
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
+    .mision {
+        @include tablet {
+            width: 70vw;
+        }
+    }
+    #seccion-der-nos {
+        @include tablet {
+            width: 70vw;
+            margin-top: 2rem;
+        } 
+    }
+}
+
+.tercera-seccion-nos p {
+    @include tablet {
+        width: 100%;
+    }
+}
+
+.cuarta-seccion-nos {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* primaria */
+
+#primer-contenido-primaria>h1 {
+    @include tablet {
+        font-size: xx-large;
+    }
+}
+
+#primer-contenido-primaria>p {
+    @include tablet {
+        font-size: large;
+    }
+}
+
+.segunda-seccion-primaria {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #seccion-izq-pri, #seccion-der-pri{
+        @include tablet {
+            width: 86%;
+        }
+        
+    }
+}
+
+/* secundaria*/
+
+#primer-contenido-secundaria>h1 {
+    @include tablet {
+        font-size: xx-large;
+    }
+}
+
+#seccion-der-sec {
+    @include tablet {
+        display: none;
+    }
+}
+
+.actividades-sec {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p {
+        @include tablet {
+            width: 100%;
+        }
+    }
+    .act-sec {
+        @include tablet {
+            padding-left: 0;
+        width: 64vw;
+        }
+    }
+}
+
+.arriba {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .uba {
+        @include tablet {
+            width: 70%;
+        padding-left: 15%;
+        }
+    }
+    .untref {
+        @include tablet {
+            width: 70%;
+        padding-left: 15%;
+        }
+    }
+}
+
+.abajo {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .unpaz {
+        @include tablet {
+            width: 70%;
+        padding-left: 15%;
+        }
+    }
+
+    .unsam {
+        @include tablet {
+            width: 70%;
+        padding-left: 15%;
+        }
+    }
+
+    .utn {
+        @include tablet {
+            width: 70%;
+        padding-left: 15%;
+        }
+    }
+}
+
+/* - responsive de 425px a 768px - */
+
+/* responsive de  768px - 1440px */
+
+@mixin desktop {
+    @media screen and (min-width:768px) and (max-width:1440px) {
+        @content
+    }
+}
+/* index */
+
+.card1 {
+    @include desktop {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(22, 21, 105, 0.233);
+    }
+}
+
+.tercera-seccion-inicio {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #seccion-der-historia {
+        @include desktop {
+            display: none;
+        }
+    }
+    #seccion-izq-historia {
+        @include desktop {
+            width: 85%;
+            margin: auto;
+        }
+        p {
+            @include desktop {
+                font-size: 17px;
+                line-height: 27px;
+                padding: 10%;
+            }
+        }
+    }
+}
+
+.quinta-seccion-inicio {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+    #seccion-der-contacto {
+        @include desktop {
+            display: none;
+        }
+    }     
+}
+
+/* nosotros */
+
+.segunda-seccion-nos {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+    }
+    .mision {
+        @include desktop {
+            width: 70vw;
+        }
+    }
+    #seccion-der-nos {
+        @include desktop {
+            width: 70vw;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.cuarta-seccion-nos {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+footer {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        font-size: 130%;
+    }
+    #seccion-der {
+        @include desktop {
+            display: none;
+        }
+    }
+
+    .logo2 {
+        @include desktop {
+            display: none;
+        }
+    }
+
+    #seccion-cen {
+        @include desktop {
+            padding-bottom: 1.5rem;
+        }
+    }
+}
+
+/* primaria */
+
+.segunda-seccion-primaria {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #seccion-izq-pri {
+        @include desktop {
+            width: 90%;
+        }
+    }
+    #seccion-der-pri {
+        @include desktop {
+            width: 90%;
+        }
+    }
+}
+
+/* secundaria */
+
+#seccion-der-sec {
+    @include desktop {
+        display: none;
+    }
+}
+
+.actividades-sec {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        @include desktop {
+            width: 100%;
+        }
+    }
+    .act-sec {
+        @include desktop {
+            width: 75vw;
+            padding: 0;
+        }
+    }
+}
+
+/* contacto */
+
+#primer-contenido-contacto>h1 {
+    @include desktop {
+        font-size: 3.5rem;
+    }
+}
+
+.arriba {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.abajo {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .unsam {
+            @include desktop {
+                padding-left: 2rem;
+            }
+        }
+    }
+}
+
+.tercera-seccion-contacto {
+    @include desktop {
+        display: flex;
+        justify-content: center;
+    }    
+    #seccion-izq-con {
+        @include desktop {
+            display: none;
+        }   
+    }
+    #seccion-der-con {
+        @include desktop {
+            width: 90%;
+        }            
+    }
+}
+
+/* fin de responsive de 768px - 1440 */
+
+/* - contacto menor a 1200px */
 
 @media screen and (max-width:1200px) {
-
-    #primer-contenido-contacto>h1 {
-        font-size: x-large;
-    }
 
     .tercera-seccion-contacto {
         display: flex;
@@ -297,492 +847,3 @@
 }
 
 /* - fin de contacto - */
-
-/* - responsive de 425px a 768px - */
-
-@media screen and (min-width:425px) and (max-width:767px) {
-
-    /* index */
-
-    #primer-contenido-inicio>h1 {
-        font-size: xx-large;
-    }
-
-    #primer-contenido-inicio>p {
-        font-size: large;
-    }
-
-    h3 {
-        font-size: x-large;
-    }
-
-    .segunda-seccion-inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 5%;
-    }
-
-    .card1 {
-        width: 77%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: rgba(22, 21, 105, 0.233);
-    }
-
-    .card-body-inicio {
-        width: 100%;
-    }
-
-    .card-body-inicio p {
-        width: 100%;
-    }
-
-    .card-body-inicio a {
-        width: 35%;
-    }
-
-    .tercer-contenido-inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tercera-seccion-inicio {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    #seccion-der-historia {
-        display: none;
-    }
-
-    #seccion-izq-historia {
-        width: 85%;
-        margin: auto;
-    }
-
-    #seccion-izq-historia p {
-        font-size: 14px;
-        line-height: 27px;
-        padding: 10%;
-    }
-
-    .quinta-seccion-inicio {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #seccion-der-contacto {
-        display: none;
-    }
-
-    #seccion-izq-contacto {
-        width: 100%;
-        padding: 2rem;
-    }
-
-    #seccion-izq-contacto p {
-        padding: 5%;
-    }
-
-    #seccion-der-contacto {
-        display: none;
-    }
-
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nombre {
-        padding: 0;
-        padding-left: 20%;
-    }
-
-    .email {
-        padding: 0;
-        padding-left: 20%;
-    }
-
-    .mens {
-        padding: 0;
-    }
-
-    .mensaje {
-        padding-right: 10%;
-    }
-
-    textarea#texto {
-        margin: 0;
-        min-width: 130%;
-        max-width: 130%;
-    }
-
-    .fieldset {
-        width: 20px;
-    }
-
-    .enviar {
-        width: 25%;
-        margin: 0;
-        padding: 0.3rem;
-        font-size: small;
-        margin-top: 12px;
-        margin-left: 35%;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        font-size: 90%;
-    }
-
-    #seccion-der {
-        display: none;
-    }
-
-    .logo2 {
-        display: none;
-    }
-
-    #seccion-cen {
-        padding-bottom: 1.5rem;
-    }
-
-    /* nosotros */
-
-    #primer-contenido-nosotros>h1 {
-        font-size: xx-large;
-    }
-
-    #primer-contenido-nosotros>p {
-        font-size: large;
-    }
-
-    .segunda-seccion-nos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mision {
-        width: 70vw;
-    }
-
-    #seccion-der-nos {
-        width: 70vw;
-        margin-top: 2rem;
-    }
-
-    .tercera-seccion-nos p {
-        width: 100%;
-    }
-
-    .cuarta-seccion-nos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* primaria */
-
-    #primer-contenido-primaria>h1 {
-        font-size: xx-large;
-    }
-
-    #primer-contenido-primaria>p {
-        font-size: large;
-    }
-
-    .segunda-seccion-primaria {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #seccion-izq-pri {
-        width: 86%;
-    }
-
-    #seccion-der-pri {
-        width: 86%;
-    }
-
-    /* secudnaria*/
-
-    #primer-contenido-secundaria>h1 {
-        font-size: xx-large;
-    }
-
-    .segunda-seccion-sec {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #seccion-der-sec {
-        display: none;
-    }
-
-    .actividades-sec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .actividades-sec p {
-        width: 100%;
-    }
-
-    .act-sec {
-        padding-left: 0;
-        width: 64vw;
-    }
-
-
-    .arriba {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .abajo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .uba {
-        width: 70%;
-        padding-left: 15%;
-    }
-
-    .unpaz {
-        width: 70%;
-        padding-left: 15%;
-    }
-
-    .unsam {
-        width: 70%;
-        padding-left: 15%;
-    }
-
-    .untref {
-        width: 70%;
-        padding-left: 15%;
-    }
-
-    .utn {
-        width: 70%;
-        padding-left: 15%;
-    }
-}
-
-/* - responsive de 425px a 768px - */
-
-/* responsive de  768px - 1440px */
-
-@media screen and (min-width:768px) and (max-width:1440px) {
-
-    #seccion-der-contacto {
-        display: none;
-    }
-
-    .card1 {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: rgba(22, 21, 105, 0.233);
-
-    }
-
-    .card-body-inicio {
-        width: 85%;
-        p {
-            width: 100%;
-        }
-    }
-
-    .tercera-seccion-inicio {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    #seccion-der-historia {
-        display: none;
-    }
-
-    #seccion-izq-historia {
-        margin: 37px;
-    }
-
-    .quinta-seccion-inicio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .segunda-seccion-nos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mision {
-        width: 70vw;
-    }
-
-    #seccion-der-nos {
-        width: 70vw;
-        margin-top: 2rem;
-    }
-
-    #seccion-izq-contacto {
-        width: 90%;
-    }
-
-    #seccion-der-contacto {
-        display: none;
-    }
-
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nombre {
-        padding: 0;
-    }
-
-    .email {
-        padding: 0;
-    }
-
-    .mens {
-        padding: 0;
-    }
-
-    textarea#texto {
-        margin: 0;
-        min-width: 22rem;
-        max-width: 22rem;
-    }
-
-    .fieldset {
-        width: 180px;
-    }
-
-    .enviar {
-        width: 17%;
-        margin: 0;
-        padding: 0.3rem;
-        font-size: small;
-        margin-top: 12px;
-        margin-left: 252px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        font-size: 130%;
-    }
-
-    #seccion-der {
-        display: none;
-    }
-
-    .logo2 {
-        display: none;
-    }
-
-    #seccion-cen {
-        padding-bottom: 1.5rem;
-    }
-
-    .cuarta-seccion-nos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .segunda-seccion-primaria {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #seccion-izq-pri {
-        width: 90%;
-    }
-
-    #seccion-der-pri {
-        width: 90%;
-    }
-
-    .segunda-seccion-sec {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #seccion-der-sec {
-        display: none;
-    }
-
-    .actividades-sec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .actividades-sec p {
-        width: 100%;
-    }
-
-    .act-sec {
-        width: 75vw;
-        padding: 0;
-
-    }
-
-    .arriba {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .abajo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .unsam {
-        padding-left: 2rem;
-    }
-
-    .tercera-seccion-contacto {
-        display: flex;
-        justify-content: center;
-    }
-
-    #seccion-izq-con {
-        display: none;
-    }
-
-    #seccion-der-con {
-        width: 90%;
-    }
-}
-/* fin de responsive de 768px - 1440 */
