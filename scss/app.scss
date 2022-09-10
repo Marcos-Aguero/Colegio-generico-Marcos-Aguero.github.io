@@ -1,13 +1,21 @@
+
+/* configuraciones generales*/
+
 @import './media-Query/mediaquerie.scss';
 @import './super-navbar/nav.scss';
 @import './footer/footer.scss';
+@import './colores/colores.scss';
+
+/* páginas*/
+
 @import './Páginas/Inicio.scss';
 @import './Páginas/primaria.scss';
 @import './Páginas/secundaria.scss';
 @import './Páginas/nosotros.scss';
 @import './Páginas/contacto.scss';
-@import './media-Query/mediaquerie.scss';
+
 /*  configuraciones generales  */
+
 * {
     padding: 0;
     margin: 0;
@@ -18,13 +26,12 @@ h3 {
     text-transform: uppercase;
     text-shadow: 4px 4px 7px rgba(58, 58, 58, 0);
     font-weight: 650;
-    color: rgb(22, 101, 170);
+    color: map-get($color, tercero);
     text-align: center;
     margin: 4rem;
-}
-
-.h3, h3 {
-    font-size: calc(1.3rem + 0.9vw);
+    &:h3 {
+        font-size: calc(1.3rem + 0.9vw);
+    }
 }
 
 h4 {
@@ -33,7 +40,7 @@ h4 {
     text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
     font-size: 2rem;
     font-weight: 650;
-    color: rgb(22, 101, 170);
+    color: map-get($color, tercero);
     text-align: center;
     margin: 4rem;
 }
@@ -44,13 +51,7 @@ h6 {
     text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
     font-size: 2rem;
     font-weight: 650;
-    color: rgb(22, 101, 170);
+    color: map-get($color, tercero);
     text-align: center;
     margin: 2rem;
-}
-
-@media screen and (min-width:320px) and (max-width:425px) {
-    h3 {
-        font-size: x-larger;
-    }
 }

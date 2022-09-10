@@ -1,3 +1,5 @@
+@import '../colores/colores.scss';
+
 /* primera seccion */
 
 .primera-seccion-secundaria {
@@ -12,11 +14,11 @@
 #primer-contenido-secundaria>h1 {
     font-family: 'montserrat', sans-serif;
     text-transform: uppercase;
-    text-shadow: 7px 7px 7px black;
+    text-shadow: 7px 7px 7px map-get($color, quinto);
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
-    color: #ffffff;
+    color: map-get($color, cuarto);
     display: flex;
     justify-content: center;
 }

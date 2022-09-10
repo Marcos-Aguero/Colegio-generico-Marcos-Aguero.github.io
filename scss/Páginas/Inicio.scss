@@ -1,3 +1,5 @@
+@import '../colores/colores.scss';
+
 /* primera seccion */
 
 .primera-seccion-inicio {
@@ -13,9 +15,9 @@
             text-transform: capitalize;
             font-family: 'montserrat', sans-serif;
             font-size: calc(1rem + 0.3vw);
-            text-shadow: 7px 7px 7px black;
+            text-shadow: 7px 7px 7px map-get($color, quinto);
             font-weight: bold;
-            color: rgb(255, 255, 255);
+            color: map-get($color, cuarto);
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -23,10 +25,10 @@
         &>h1 {
             font-family: 'montserrat', sans-serif;
             text-transform: uppercase;
-            text-shadow: 7px 7px 7px black;
+            text-shadow: 7px 7px 7px map-get($color, quinto);
             font-size: calc(1.375rem + 1.5vw);
             font-weight: 700;
-            color: #ffffff;
+            color: map-get($color, cuarto);
             display: flex;
             justify-content: center;
         }
@@ -67,7 +69,7 @@
         font-family: Helvetica, sans-serif;
         font-weight: 600;
         font-size: large;
-        color: rgb(23, 42, 119);
+        color: map-get($color, primero);
         text-align: center;
         padding: 1.5rem 0rem;
     }
@@ -79,15 +81,15 @@
         font-weight: bold;
         border-radius: 4px;
         background: rgb(216, 224, 255);
-        border: 1px solid rgb(23, 42, 119);
-        color: rgb(23, 42, 119);
+        border: 1px solid map-get($color, primero);
+        color: map-get($color, primero);
         padding: 0.7rem;
         display: flex;
         justify-content: center;
         width: 30%;
         transition: all 400ms ease;
         &:hover {
-            background: rgb(23, 42, 119);
+            background: map-get($color, primero);
             color: #faf6f0;
         }
     }
@@ -114,8 +116,8 @@
     .tercer-contenido-inicio {
         grid-area: tercer-contenido-inicio;
         .historia {
-            color: #ffffff;
-            text-shadow: 7px 7px 7px black;
+            color: map-get($color, cuarto);
+            text-shadow: 7px 7px 7px map-get($color, quinto);
         }
     }
 
@@ -132,7 +134,7 @@
             text-transform: none;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             line-height: 40px;
-            color: rgb(23, 42, 119);
+            color: map-get($color, primero);
             text-align: justify;
             font-size: large;
             font-weight: 500;
@@ -176,8 +178,8 @@
 
 .quinta-seccion-inicio {
     background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/contacto.jpg') no-repeat center/cover;
-    color: white;
-    text-shadow: 2px 2px black;
+    color: map-get($color, cuarto);
+    text-shadow: 2px 2px map-get($color, quinto);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -221,8 +223,8 @@
 
         .enviar {
             background-color: rgb(33, 68, 206);
-            color: #faf6f0;
-            border-color: #faf6f0;
+            color: map-get($color, segundo);
+            border-color: map-get($color, segundo);
             padding: 1.3rem;
             text-transform: uppercase;
             font-family: 'montserrat', sans-serif;

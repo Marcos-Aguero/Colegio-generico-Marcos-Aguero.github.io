@@ -1,3 +1,5 @@
+@import '../colores/colores.scss';
+
 /* primera seccion */
 
 .primera-seccion-primaria {
@@ -13,23 +15,23 @@
     text-transform: capitalize;
     font-family: 'montserrat', sans-serif;
     font-size: 1.5rem;
-    text-shadow: 7px 7px 7px black;
+    text-shadow: 7px 7px 7px map-get($color, quinto);
     margin-bottom: 0.5rem;
     font-weight: bold;
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: map-get($color, cuarto);
 }
 
 #primer-contenido-primaria>h1 {
     font-family: 'montserrat', sans-serif;
     text-transform: uppercase;
-    text-shadow: 7px 7px 7px black;
+    text-shadow: 7px 7px 7px map-get($color, quinto);
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
-    color: #ffffff;
+    color: map-get($color, cuarto);
     display: flex;
     justify-content: center;
 }
@@ -57,15 +59,15 @@
 
 .tur-man {
     padding-top: 1rem;
-    color: #ffffff;
-    text-shadow: 2.5px 2.5px black;
+    color: map-get($color, cuarto);
+    text-shadow: 2.5px 2.5px map-get($color, quinto);
     font-size: 2rem;
 
 }
 
 .tur-hor {
-    color: #ffffff;
-    text-shadow: 2.5px 2.5px black;
+    color: map-get($color, cuarto);
+    text-shadow: 2.5px 2.5px map-get($color, quinto);
 }
 
 .horario-mañana {
@@ -80,7 +82,7 @@
 .tm {
     background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
     color: rgb(243, 223, 191);
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px map-get($color, quinto);
     border-radius: 6px;
     font-size: larger;
     text-align: center;
@@ -98,7 +100,7 @@
 .tt {
     background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
     color: rgb(243, 223, 191);
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px map-get($color, quinto);
     border-radius: 6px;
     font-size: larger;
     text-align: center;
@@ -166,21 +168,21 @@
     padding: 2px;
     margin: 1rem 1rem;
     text-align: center;
-    color: #ffffff;
+    color: map-get($color, cuarto);
     font-family: 'Montserrat', sans-serif;
     font-size: larger;
     border-radius: 4px;
     background: rgb(216, 224, 255);
-    border: 1px solid rgb(23, 42, 119);
-    color: rgb(23, 42, 119);
+    border: 1px solid map-get($color, primero);
+    color: map-get($color, primero);
     padding: 1rem;
     margin-top: 2.5rem;
     transition: all 400ms ease;
 }
 
 .mas-actividades a:hover {
-    background: rgb(23, 42, 119);
-    color: #faf6f0;
+    background: map-get($color, primero);
+    color: map-get($color, segundo);
 }
 
 /* fin de tercera seccion */

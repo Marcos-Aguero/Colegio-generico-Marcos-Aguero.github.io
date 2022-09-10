@@ -1,3 +1,5 @@
+@import '../colores/colores.scss';
+
 /* primera seccion */
 
 .primera-seccion-contacto {
@@ -12,11 +14,11 @@
 #primer-contenido-contacto>h1 {
     font-family: 'montserrat', sans-serif;
     text-transform: uppercase;
-    text-shadow: 7px 7px 7px black;
+    text-shadow: 7px 7px 7px map-get($color, quinto);
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
-    color: #ffffff;
+    color: map-get($color, cuarto);
     display: flex;
     justify-content: center;
 }
@@ -27,8 +29,8 @@
 
 .tercera-seccion-contacto {
     background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/nosotros.jpg') no-repeat center/cover;
-    color: #ffffff;
-    text-shadow: 1px 1px black;
+    color: map-get($color, cuarto);
+    text-shadow: 1px 1px map-get($color, quinto);
     display: flex;
     flex-direction: row;
     align-items: center;
