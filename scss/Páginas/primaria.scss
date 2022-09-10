@@ -9,31 +9,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#primer-contenido-primaria>p {
-    text-transform: capitalize;
-    font-family: 'montserrat', sans-serif;
-    font-size: 1.5rem;
-    text-shadow: 7px 7px 7px map-get($color, quinto);
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: map-get($color, cuarto);
-}
-
-#primer-contenido-primaria>h1 {
-    font-family: 'montserrat', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 7px 7px 7px map-get($color, quinto);
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 2.5rem;
-    color: map-get($color, cuarto);
-    display: flex;
-    justify-content: center;
+    #primer-contenido-primaria{
+        &>p {
+        text-transform: capitalize;
+        font-family: 'montserrat', sans-serif;
+        font-size: 1.5rem;
+        text-shadow: 7px 7px 7px map-get($color, quinto);
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: map-get($color, cuarto);
+        } 
+        &>h1 {
+            font-family: 'montserrat', sans-serif;
+            text-transform: uppercase;
+            text-shadow: 7px 7px 7px map-get($color, quinto);
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            color: map-get($color, cuarto);
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 /* fin de primera seccion */
@@ -43,76 +43,83 @@
 .segunda-seccion-primaria {
     display: flex;
     justify-content: space-evenly;
-}
-
-.segunda-seccion-primaria p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 }
 
 #seccion-izq-pri {
     width: 50%;
+    .tm {
+        background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
+        color: rgb(243, 223, 191);
+        text-shadow: 1px 1px map-get($color, quinto);
+        border-radius: 6px;
+        font-size: larger;
+        text-align: center;
+        opacity: 0.9;
+        box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        transition: all 400mx ease;
+        &:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+        .tur-man {
+            padding-top: 1rem;
+            color: map-get($color, cuarto);
+            text-shadow: 2.5px 2.5px map-get($color, quinto);
+            font-size: 2rem;
+        }
+        .tur-hor {
+            color: map-get($color, cuarto);
+            text-shadow: 2.5px 2.5px map-get($color, quinto);
+        }
+        .horario-mañana {
+            padding-bottom: 2rem;
+        }
+        .text-mañana {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
 }
 
 #seccion-der-pri {
     width: 50%;
-}
-
-.tur-man {
-    padding-top: 1rem;
-    color: map-get($color, cuarto);
-    text-shadow: 2.5px 2.5px map-get($color, quinto);
-    font-size: 2rem;
-
-}
-
-.tur-hor {
-    color: map-get($color, cuarto);
-    text-shadow: 2.5px 2.5px map-get($color, quinto);
-}
-
-.horario-mañana {
-    padding-bottom: 2rem;
-}
-
-.text-mañana {
-    padding-left: 4rem;
-    padding-right: 4rem;
-}
-
-.tm {
-    background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
-    color: rgb(243, 223, 191);
-    text-shadow: 1px 1px map-get($color, quinto);
-    border-radius: 6px;
-    font-size: larger;
-    text-align: center;
-    opacity: 0.9;
-    box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400mx ease;
-}
-
-.tm:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-}
-
-.tt {
-    background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
-    color: rgb(243, 223, 191);
-    text-shadow: 1px 1px map-get($color, quinto);
-    border-radius: 6px;
-    font-size: larger;
-    text-align: center;
-    opacity: 0.9;
-    box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400mx ease;
-}
-
-.tt:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
+    .tt {
+        background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
+        color: rgb(243, 223, 191);
+        text-shadow: 1px 1px map-get($color, quinto);
+        border-radius: 6px;
+        font-size: larger;
+        text-align: center;
+        opacity: 0.9;
+        box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        transition: all 400mx ease;
+        &:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+        .tur-man {
+            padding-top: 1rem;
+            color: map-get($color, cuarto);
+            text-shadow: 2.5px 2.5px map-get($color, quinto);
+            font-size: 2rem;
+        }
+        .tur-hor {
+            color: map-get($color, cuarto)!important;
+            text-shadow: 2.5px 2.5px map-get($color, quinto);
+        }
+        .horario-mañana {
+            padding-bottom: 2rem;
+        }
+        .text-mañana {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
 }
 
 /* fin de segunda seccion */
@@ -122,67 +129,60 @@
 .tercera-seccion-primaria {
     display: flex;
     flex-direction: row;
-}
+    #seccion-izq-act {
+        background-color: #b0d0f5;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .actividades {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: justify;
+                width: 77%;
+                padding-top: 2rem;
+            }
+            .img-act {
+                width: 80%;
+                padding: 1.5rem;
+            }
+        }
+    }
 
-#seccion-izq-act {
-    background-color: #b0d0f5;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#seccion-der-act {
-    background-color: #b0d0f5;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.actividades {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mas-actividades {
-    display: flex;
-    flex-direction: column;
-}
-
-.img-act {
-    width: 80%;
-    padding: 1.5rem;
-}
-
-.actividades p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    width: 77%;
-    padding-top: 2rem;
-}
-
-.mas-actividades a {
-    text-decoration: none;
-    padding: 2px;
-    margin: 1rem 1rem;
-    text-align: center;
-    color: map-get($color, cuarto);
-    font-family: 'Montserrat', sans-serif;
-    font-size: larger;
-    border-radius: 4px;
-    background: rgb(216, 224, 255);
-    border: 1px solid map-get($color, primero);
-    color: map-get($color, primero);
-    padding: 1rem;
-    margin-top: 2.5rem;
-    transition: all 400ms ease;
-}
-
-.mas-actividades a:hover {
-    background: map-get($color, primero);
-    color: map-get($color, segundo);
+    #seccion-der-act {
+        background-color: #b0d0f5;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .mas-actividades {
+            display: flex;
+            flex-direction: column;
+            a {
+                text-decoration: none;
+                padding: 2px;
+                margin: 1rem 1rem;
+                text-align: center;
+                color: map-get($color, cuarto);
+                font-family: 'Montserrat', sans-serif;
+                font-size: larger;
+                border-radius: 4px;
+                background: rgb(216, 224, 255);
+                border: 1px solid map-get($color, primero);
+                color: map-get($color, primero);
+                padding: 1rem;
+                margin-top: 2.5rem;
+                transition: all 400ms ease;
+                &:hover {
+                    background: map-get($color, primero);
+                    color: map-get($color, segundo);
+                }
+            }
+        }
+    }
 }
 
 /* fin de tercera seccion */

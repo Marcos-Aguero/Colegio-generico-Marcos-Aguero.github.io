@@ -9,18 +9,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#primer-contenido-contacto>h1 {
-    font-family: 'montserrat', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 7px 7px 7px map-get($color, quinto);
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 2.5rem;
-    color: map-get($color, cuarto);
-    display: flex;
-    justify-content: center;
+    #primer-contenido-contacto>h1 {
+        font-family: 'montserrat', sans-serif;
+        text-transform: uppercase;
+        text-shadow: 7px 7px 7px map-get($color, quinto);
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+        color: map-get($color, cuarto);
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* fin de primera seccion */
