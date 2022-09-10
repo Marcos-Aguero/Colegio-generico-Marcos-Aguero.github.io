@@ -8,28 +8,29 @@
     justify-content: center;
     align-items: center;
 
-    #primer-contenido-inicio>p {
-        text-transform: capitalize;
-        font-family: 'montserrat', sans-serif;
-        font-size: calc(1rem + 0.3vw);
-        text-shadow: 7px 7px 7px black;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    #primer-contenido-inicio{
+        &>p {
+            text-transform: capitalize;
+            font-family: 'montserrat', sans-serif;
+            font-size: calc(1rem + 0.3vw);
+            text-shadow: 7px 7px 7px black;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        &>h1 {
+            font-family: 'montserrat', sans-serif;
+            text-transform: uppercase;
+            text-shadow: 7px 7px 7px black;
+            font-size: calc(1.375rem + 1.5vw);
+            font-weight: 700;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+        }
     }
-    #primer-contenido-inicio>h1 {
-        font-family: 'montserrat', sans-serif;
-        text-transform: uppercase;
-        text-shadow: 7px 7px 7px black;
-        font-size: calc(1.375rem + 1.5vw);
-        font-weight: 700;
-        color: #ffffff;
-        display: flex;
-        justify-content: center;
-    }
-    
 }
 /* fin de primera seccion */
 
@@ -51,15 +52,11 @@
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+    }
 }
-
-.card1:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-}
-
-
-
 
 .card-body {
     display: flex;
@@ -168,11 +165,9 @@
 .carousel-inner {
     width: 100%;
     height: 95%;
-
     .d-block {
         width: 100vw;
     }
-
 }
 
 /* fin de cuarta seccion */
