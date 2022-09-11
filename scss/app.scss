@@ -68,7 +68,7 @@ h6 {
     opacity: 0;
     transition: 0.5s;
 }
-.scrollTop:active {
+.scrollTop.active {
     bottom: 20px;
     visibility: visible;
     opacity: 1;
