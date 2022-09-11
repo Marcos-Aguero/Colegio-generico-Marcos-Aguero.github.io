@@ -1046,27 +1046,29 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .primera-seccion-primaria #primer-contenido-primaria > p {
-    text-transform: capitalize;
-    font-family: 'montserrat', sans-serif;
-    font-size: 1.5rem;
-    text-shadow: 7px 7px 7px #000000;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #ffffff; }
-  .primera-seccion-primaria #primer-contenido-primaria > h1 {
-    font-family: 'montserrat', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 7px 7px 7px #000000;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 2.5rem;
-    color: #ffffff;
-    display: flex;
-    justify-content: center; }
+
+#primer-contenido-primaria > p {
+  text-transform: capitalize;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 7px 7px 7px #000000;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff; }
+
+#primer-contenido-primaria > h1 {
+  font-family: 'montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 7px 7px 7px #000000;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center; }
 
 /* fin de primera seccion */
 /* segunda seccion */
@@ -1196,16 +1198,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .primera-seccion-secundaria #primer-contenido-secundaria > h1 {
-    font-family: 'montserrat', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 7px 7px 7px #000000;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 2.5rem;
-    color: #ffffff;
-    display: flex;
-    justify-content: center; }
+
+#primer-contenido-secundaria > h1 {
+  font-family: 'montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 7px 7px 7px #000000;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center; }
 
 /* fin de primara seccion */
 /* segunda seccion */
@@ -1308,27 +1311,29 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .primera-seccion-nosotros #primer-contenido-nosotros > p {
-    text-transform: capitalize;
-    font-family: 'montserrat', sans-serif;
-    font-size: 1.5rem;
-    text-shadow: 7px 7px 7px #000000;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #ffffff; }
-  .primera-seccion-nosotros #primer-contenido-nosotros > h1 {
-    font-family: 'montserrat', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 7px 7px 7px #000000;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 2.5rem;
-    color: #ffffff;
-    display: flex;
-    justify-content: center; }
+
+#primer-contenido-nosotros > p {
+  text-transform: capitalize;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 7px 7px 7px #000000;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff; }
+
+#primer-contenido-nosotros > h1 {
+  font-family: 'montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 7px 7px 7px #000000;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center; }
 
 /* fin de primera seccion */
 /* segunda seccion */
@@ -1395,16 +1400,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .primera-seccion-contacto #primer-contenido-contacto > h1 {
-    font-family: 'montserrat', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 7px 7px 7px #000000;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 2.5rem;
-    color: #ffffff;
-    display: flex;
-    justify-content: center; }
+
+#primer-contenido-contacto > h1 {
+  font-family: 'montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 7px 7px 7px #000000;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center; }
 
 /* fin de primera seccion */
 /*Tercera sección*/
@@ -2088,3 +2094,25 @@ h6 {
   text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
   font-size: 2rem;
   margin: 2rem; }
+
+/* boton hacia arriba*/
+.scrollTop {
+  position: fixed;
+  bottom: 800px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background: rgba(13, 109, 253, 0.856) url("../Imágenes/punta-de-flecha-hacia-arriba.png");
+  border-radius: 50%;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 32;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s; }
+  .scrollTop.active {
+    bottom: 20px;
+    visibility: visible;
+    opacity: 1; }

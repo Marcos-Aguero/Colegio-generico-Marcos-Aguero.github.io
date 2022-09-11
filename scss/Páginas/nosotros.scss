@@ -9,31 +9,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    #primer-contenido-nosotros{
-        &>p {
-            text-transform: capitalize;
-            font-family: 'montserrat', sans-serif;
-            font-size: 1.5rem;
-            text-shadow: 7px 7px 7px map-get($color, quinto);
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            color: map-get($color, cuarto);
-        }
-        &>h1 {
-            font-family: 'montserrat', sans-serif;
-            text-transform: uppercase;
-            text-shadow: 7px 7px 7px map-get($color, quinto);
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 2.5rem;
-            color: map-get($color, cuarto);
-            display: flex;
-            justify-content: center;
-        }
-    }
+}
+
+#primer-contenido-nosotros>p {
+    text-transform: capitalize;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 7px 7px 7px map-get($color, quinto);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: map-get($color, cuarto);
+}
+
+#primer-contenido-nosotros>h1 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px map-get($color, quinto);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: map-get($color, cuarto);
+    display: flex;
+    justify-content: center;
 }
 
 /* fin de primera seccion */
