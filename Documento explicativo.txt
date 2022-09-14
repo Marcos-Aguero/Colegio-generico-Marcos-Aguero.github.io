@@ -1,0 +1,18 @@
+
+En todas las páginas agregue el SEO con las siguientes características:
+
+-Descripción:
+	     mediante la etiqueta meta name desciption, agregué el siguiente párrafo que explica en pocas 
+	     palabras el contenido de mi sitio: "Institución destinada a la enseñanza Primaria y Secundaria. 
+	     Proporciona los mejores conocimientos básicos en la alfabetización y la preparación universitaria."
+
+-Palabras clave: 
+	     mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las 
+	     páginas de mi sitio: "Colegio, Escuela, Institución Educativa, Primaria, Secundaria"
+
+-Encabezado:
+	    para el encabezado del h1 del index utilicé el texto:"Colegio Genérico"
+	    para el encabezado del h1 de nosotros utilicé el texto:"Nosotros"
+	    para el encabezado del h1 de primaria utilicé el texto:"Primaria"
+	    para el encabezado del h1 de secundaria utilicé el texto:"Secundaria"
+	    para el encabezado del h1 de contacto utilicé el texto:"Contacto"
