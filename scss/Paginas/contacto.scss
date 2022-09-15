@@ -3,7 +3,7 @@
 /* primera seccion */
 
 .primera-seccion-contacto {
-    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Img/contacto.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/contacto.jpg") no-repeat center/cover;
     background-attachment: fixed;
     height: 70vh;
     display: flex;
@@ -27,7 +27,7 @@
 /*Tercera sección*/
 
 .tercera-seccion-contacto {
-    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Img/nosotros.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/nosotros.jpg") no-repeat center/cover;
     color: map-get($color, cuarto);
     text-shadow: 1px 1px map-get($color, quinto);
     display: flex;

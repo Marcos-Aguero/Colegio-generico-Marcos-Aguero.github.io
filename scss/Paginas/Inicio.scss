@@ -100,7 +100,7 @@
 /* tercera seccion */
 
 .tercera-seccion-inicio {
-    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Img/historia.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/historia.jpg") no-repeat center/cover;
     background-attachment: fixed;
     height: 90vh;
     display: grid;
@@ -179,7 +179,7 @@
 /* quinta seccion */
 
 .quinta-seccion-inicio {
-    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Img/contacto.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/contacto.jpg") no-repeat center/cover;
     color: map-get($color, cuarto);
     text-shadow: 2px 2px map-get($color, quinto);
     display: grid;
