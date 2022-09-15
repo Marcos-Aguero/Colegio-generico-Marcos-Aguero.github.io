@@ -55,6 +55,9 @@
         padding: 2rem;
         border-radius: 6px;
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        p {
+            text-align: justify;
+        }
     }
     .mision {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -64,8 +67,9 @@
         margin-top: 2rem;
         border-radius: 6px;
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-        &:p {
+        p {
             padding-bottom: 2rem;
+            text-align: justify;
         }
     }
 }

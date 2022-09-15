@@ -74,6 +74,10 @@
         padding: 1.5rem 0rem;
     }
 
+    .card-text {
+        text-align: justify;
+    }
+
     a {
         text-decoration: none;
         text-transform: uppercase;
@@ -215,7 +219,7 @@
         p {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: justify;
         }
         .mb-33 {
             display: flex;
