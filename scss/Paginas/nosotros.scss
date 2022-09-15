@@ -3,7 +3,7 @@
 /* primera seccion */
 
 .primera-seccion-nosotros {
-    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/nosotros.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Img/nosotros.jpg') no-repeat center/cover;
     background-attachment: fixed;
     height: 90vh;
     display: flex;
@@ -46,7 +46,7 @@
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Imágenes/portada.jpg') no-repeat;
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url('../Img/portada.jpg') no-repeat;
     background-attachment: fixed;
     #seccion-der-nos {
         font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -134,7 +134,6 @@ footer {
     }
 }
 
-
 /* - nosotros - */
 
 #primer-contenido-nosotros{
@@ -306,16 +305,30 @@ footer {
             align-items: center;
             justify-content: center;
         }
+        .unlam {
+            @include mobile {
+                width: 12rem;
+                padding-bottom: 1em;
+            }        
+        }
         .uba {
             @include mobile {
-                width: 70%;
-                padding-left: 15%;
+                width: 89%;
+                padding-left: 17%;
+                padding-bottom: 1em;
+            }        
+        }
+        .unlp {
+            @include mobile {
+                width: 12rem;
+                padding-bottom: 1em;
             }        
         }
         .untref {
             @include mobile {
-                width: 70%;
-                padding-left: 15%;
+                width: 82%;
+                padding-left: 22%;
+                padding-bottom: 1em;
             }            
         }
     }
@@ -327,20 +340,22 @@ footer {
         }
         .unpaz {
             @include mobile {
-                width: 70%;
-                padding-left: 15%;
+                width: 83%;
+                padding-left: 21%;
+                padding-bottom: 1em;
             }    
         }
         .unsam {
             @include mobile {
-                width: 70%;
-                padding-left: 15%;
+                width: 77%;
+                padding-left: 26%;
+                padding-bottom: 1em;
             }        
         }
         .utn {
             @include mobile {
-                width: 70%;
-                padding-left: 15%;
+                width: 84%;
+                padding-left: 19%;
             }            
         }
     }

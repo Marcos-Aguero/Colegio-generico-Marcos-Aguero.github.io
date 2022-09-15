@@ -8,11 +8,11 @@
 
 /* páginas*/
 
-@import './Páginas/Inicio.scss';
-@import './Páginas/primaria.scss';
-@import './Páginas/secundaria.scss';
-@import './Páginas/nosotros.scss';
-@import './Páginas/contacto.scss';
+@import './Paginas/Inicio.scss';
+@import './Paginas/primaria.scss';
+@import './Paginas/secundaria.scss';
+@import './Paginas/nosotros.scss';
+@import './Paginas/contacto.scss';
 @import './media-Query/mediaquerie.scss';
 
 /*  configuraciones generales  */
@@ -57,7 +57,7 @@ h6 {
     right: 25px;
     width: 50px;
     height: 50px;
-    background: rgba(13, 109, 253, 0.856) url('../Imágenes/punta-de-flecha-hacia-arriba.png');
+    background: rgba(13, 109, 253, 0.856) url('../Img/punta-de-flecha-hacia-arriba.png');
     border-radius: 50%;
     background-size: 40px;
     background-position: center;
