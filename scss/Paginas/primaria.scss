@@ -49,29 +49,26 @@ color: map-get($color, cuarto);
 #seccion-izq-pri {
     width: 50%;
     .tm {
-        background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
-        color: rgb(243, 223, 191);
-        text-shadow: 1px 1px map-get($color, quinto);
+        background-color: rgba(22, 21, 105, 0.082);
+        color: rgb(0, 0, 0);
         border-radius: 6px;
         font-size: larger;
         text-align: center;
         opacity: 0.9;
         box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
         cursor: default;
-        transition: all 400mx ease;
+        transition: all 400ms ease;
         &:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-            transform: translateY(-3%);
+            transform: translateY(-2%);
         }
         .tur-man {
-            padding-top: 1rem;
-            color: map-get($color, cuarto);
-            text-shadow: 2.5px 2.5px map-get($color, quinto);
+            padding-top: 3rem;
+            color: map-get($color, tercero);
             font-size: 2rem;
         }
         .tur-hor {
-            color: map-get($color, cuarto);
-            text-shadow: 2.5px 2.5px map-get($color, quinto);
+            color: map-get($color, tercero);
         }
         .horario-mañana {
             padding-bottom: 2rem;
@@ -86,29 +83,26 @@ color: map-get($color, cuarto);
 #seccion-der-pri {
     width: 50%;
     .tt {
-        background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
-        color: rgb(243, 223, 191);
-        text-shadow: 1px 1px map-get($color, quinto);
+        background: rgba(22, 21, 105, 0.082);
+        color: rgb(0, 0, 0);
         border-radius: 6px;
         font-size: larger;
         text-align: center;
         opacity: 0.9;
         box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
         cursor: default;
-        transition: all 400mx ease;
+        transition: all 400ms ease;
         &:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-            transform: translateY(-3%);
+            transform: translateY(-2%);
         }
         .tur-man {
-            padding-top: 1rem;
-            color: map-get($color, cuarto);
-            text-shadow: 2.5px 2.5px map-get($color, quinto);
+            padding-top: 3rem;
+            color: map-get($color, tercero);
             font-size: 2rem;
         }
         .tur-hor {
-            color: map-get($color, cuarto)!important;
-            text-shadow: 2.5px 2.5px map-get($color, quinto);
+            color: map-get($color, tercero)!important;
         }
         .horario-mañana {
             padding-bottom: 2rem;

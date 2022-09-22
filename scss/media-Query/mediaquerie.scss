@@ -281,11 +281,18 @@ footer {
                 width: 100%;
             }            
         }
-        .act-sec {
-            @include mobile {
-                width: 75vw;
-                    padding: 0;
-            }
+        
+    }
+}
+
+.tercera-seccion-sec #seccion-izq-sec {
+    @include mobile {
+        width: 85%;
+    }
+    .actividades-sec .act-sec {
+        @include mobile {
+            width: 80vw;
+            padding: 0;
         }
     }
 }

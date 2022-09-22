@@ -66,11 +66,12 @@
     align-items: center;
 
     .card-title-inicio {
-        font-family: Helvetica, sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: large;
         color: map-get($color, primero);
         text-align: center;
+        text-transform: uppercase;
         padding: 1.5rem 0rem;
     }
 
@@ -183,9 +184,8 @@
 /* quinta seccion */
 
 .quinta-seccion-inicio {
-    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/contacto.jpg") no-repeat center/cover;
-    color: map-get($color, cuarto);
-    text-shadow: 2px 2px map-get($color, quinto);
+    
+    color: map-get($color, tercero);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:

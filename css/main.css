@@ -208,8 +208,12 @@
     width: 100%; } }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
-  .tercera-seccion-sec .actividades-sec .act-sec {
-    width: 75vw;
+  .tercera-seccion-sec #seccion-izq-sec {
+    width: 85%; } }
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .tercera-seccion-sec #seccion-izq-sec .actividades-sec .act-sec {
+    width: 80vw;
     padding: 0; } }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
@@ -923,11 +927,12 @@ footer {
   flex-direction: column;
   align-items: center; }
   .card-body .card-title-inicio {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: large;
     color: #172a77;
     text-align: center;
+    text-transform: uppercase;
     padding: 1.5rem 0rem; }
   .card-body .card-text {
     text-align: justify; }
@@ -1008,9 +1013,7 @@ footer {
 /* fin de cuarta seccion */
 /* quinta seccion */
 .quinta-seccion-inicio {
-  background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/contacto.jpg") no-repeat center/cover;
-  color: #ffffff;
-  text-shadow: 2px 2px #000000;
+  color: #1665aa;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "quinto-contenido-inicio quinto-contenido-inicio" "seccion-izq-contacto seccion-der-contacto " "seccion-izq-contacto seccion-der-contacto " "seccion-izq-contacto seccion-der-contacto ";
@@ -1097,27 +1100,24 @@ footer {
 #seccion-izq-pri {
   width: 50%; }
   #seccion-izq-pri .tm {
-    background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
-    color: #f3dfbf;
-    text-shadow: 1px 1px #000000;
+    background-color: rgba(22, 21, 105, 0.082);
+    color: black;
     border-radius: 6px;
     font-size: larger;
     text-align: center;
     opacity: 0.9;
     box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
-    transition: all 400mx ease; }
+    transition: all 400ms ease; }
     #seccion-izq-pri .tm:hover {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-      transform: translateY(-3%); }
+      transform: translateY(-2%); }
     #seccion-izq-pri .tm .tur-man {
-      padding-top: 1rem;
-      color: #ffffff;
-      text-shadow: 2.5px 2.5px #000000;
+      padding-top: 3rem;
+      color: #1665aa;
       font-size: 2rem; }
     #seccion-izq-pri .tm .tur-hor {
-      color: #ffffff;
-      text-shadow: 2.5px 2.5px #000000; }
+      color: #1665aa; }
     #seccion-izq-pri .tm .horario-mañana {
       padding-bottom: 2rem; }
     #seccion-izq-pri .tm .text-mañana {
@@ -1127,27 +1127,24 @@ footer {
 #seccion-der-pri {
   width: 50%; }
   #seccion-der-pri .tt {
-    background: linear-gradient(rgba(71, 98, 207, 0.8), rgba(243, 223, 191, 0.5));
-    color: #f3dfbf;
-    text-shadow: 1px 1px #000000;
+    background: rgba(22, 21, 105, 0.082);
+    color: black;
     border-radius: 6px;
     font-size: larger;
     text-align: center;
     opacity: 0.9;
     box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
-    transition: all 400mx ease; }
+    transition: all 400ms ease; }
     #seccion-der-pri .tt:hover {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-      transform: translateY(-3%); }
+      transform: translateY(-2%); }
     #seccion-der-pri .tt .tur-man {
-      padding-top: 1rem;
-      color: #ffffff;
-      text-shadow: 2.5px 2.5px #000000;
+      padding-top: 3rem;
+      color: #1665aa;
       font-size: 2rem; }
     #seccion-der-pri .tt .tur-hor {
-      color: #ffffff !important;
-      text-shadow: 2.5px 2.5px #000000; }
+      color: #1665aa !important; }
     #seccion-der-pri .tt .horario-mañana {
       padding-bottom: 2rem; }
     #seccion-der-pri .tt .text-mañana {
@@ -1248,7 +1245,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
-  background-color: #f3dfbf; }
+  background-color: #b0d0f5; }
   .tercera-seccion-sec #seccion-izq-sec {
     width: 50%; }
     .tercera-seccion-sec #seccion-izq-sec .actividades-sec {
@@ -1364,20 +1361,26 @@ footer {
   .segunda-seccion-nos #seccion-der-nos {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 35vw;
-    background: #b0d0f5;
+    background: #e6e6e9;
     padding: 2rem;
     border-radius: 6px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); }
+    .segunda-seccion-nos #seccion-der-nos:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-2%); }
     .segunda-seccion-nos #seccion-der-nos p {
       text-align: justify; }
   .segunda-seccion-nos .mision {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 2rem;
-    background: #b0d0f5;
+    background: #dadae0;
     width: 35vw;
     margin-top: 2rem;
     border-radius: 6px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); }
+    .segunda-seccion-nos .mision:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-2%); }
     .segunda-seccion-nos .mision p {
       padding-bottom: 2rem;
       text-align: justify; }
@@ -1389,7 +1392,7 @@ footer {
   display: flex;
   justify-content: center;
   padding-bottom: 5rem;
-  background: linear-gradient(#b0d0f5, #f3dfbfc9); }
+  background: linear-gradient(#c1dbf8, #fcf8f2c9); }
   .tercera-seccion-nos .tercer-contenido-nos {
     display: flex;
     flex-direction: column;
@@ -1399,7 +1402,7 @@ footer {
     width: 100%; }
     .tercera-seccion-nos .tercer-contenido-nos p {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      width: 42%;
+      width: 62%;
       text-align: center; }
 
 /* fin de tercera seccion */
@@ -1435,24 +1438,36 @@ footer {
 /*Tercera sección*/
 .tercera-seccion-contacto {
   background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/nosotros.jpg") no-repeat center/cover;
-  color: #ffffff;
-  text-shadow: 1px 1px #000000;
+  color: #000000;
   display: flex;
   flex-direction: row;
   align-items: center; }
   .tercera-seccion-contacto #seccion-izq-con {
-    width: 50%;
+    width: 53%;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .tercera-seccion-contacto #seccion-izq-con p {
-      text-align: center; }
+      text-align: center;
+      background: rgba(196, 196, 196, 0.438);
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+      padding: 1.5rem;
+      border-radius: 6px; }
     .tercera-seccion-contacto #seccion-izq-con .mapita {
       padding: 5rem; }
     .tercera-seccion-contacto #seccion-izq-con .covid {
       width: 80%; }
   .tercera-seccion-contacto #seccion-der-con {
     width: 50%; }
+    .tercera-seccion-contacto #seccion-der-con .covid {
+      text-align: center;
+      color: #272727;
+      background: rgba(196, 196, 196, 0.438);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      padding: 1.5rem;
+      border-radius: 6px; }
     .tercera-seccion-contacto #seccion-der-con .contacto {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       display: flex;
@@ -1680,8 +1695,12 @@ footer {
     width: 100%; } }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
-  .tercera-seccion-sec .actividades-sec .act-sec {
-    width: 75vw;
+  .tercera-seccion-sec #seccion-izq-sec {
+    width: 85%; } }
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .tercera-seccion-sec #seccion-izq-sec .actividades-sec .act-sec {
+    width: 80vw;
     padding: 0; } }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
@@ -2117,8 +2136,12 @@ footer {
 h3 {
   text-shadow: 4px 4px 7px rgba(58, 58, 58, 0);
   margin: 4rem; }
-  h3:h3 {
-    font-size: calc(1.3rem + 0.9vw); }
+  h3.h3 {
+    font-size: calc(1.5rem + 1vw); }
+
+@media (min-width: 1200px) {
+  .h3, h3 {
+    font-size: 2.35rem; } }
 
 h4 {
   text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);

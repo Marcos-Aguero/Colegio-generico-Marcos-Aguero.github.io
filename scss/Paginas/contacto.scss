@@ -28,19 +28,23 @@
 
 .tercera-seccion-contacto {
     background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/nosotros.jpg") no-repeat center/cover;
-    color: map-get($color, cuarto);
-    text-shadow: 1px 1px map-get($color, quinto);
+    color: map-get($color, quinto);
     display: flex;
     flex-direction: row;
     align-items: center;
 
     #seccion-izq-con {
-        width: 50%;
+        width: 53%;
         display: flex;
         flex-direction: column;
         align-items: center;
         p {
             text-align: center;
+            background: rgba(196, 196, 196, 0.438);
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            padding: 1.5rem;
+            border-radius: 6px;
         }
         
         .mapita {
@@ -53,6 +57,15 @@
 
     #seccion-der-con {
         width: 50%;
+        .covid {
+            text-align: center;
+            color: rgb(39, 39, 39);
+            background: rgba(196, 196, 196, 0.438);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            padding: 1.5rem;
+            border-radius: 6px;
+        }
 
         .contacto {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
