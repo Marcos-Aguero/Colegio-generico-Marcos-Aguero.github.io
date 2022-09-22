@@ -605,25 +605,26 @@ footer {
     }
     .uba {
         @include tablet {
-            width: 80%;
-            padding-left: 6%;
+            width: 77%;
+            padding-left: 17%;
         }
     }
     .unlam {
         @include tablet {
-            width: 22rem;
+            width: 30rem;
             padding-right: 15%;
         }
     }
     .unlp {
         @include tablet {
-            width: 22rem;
-            padding-right: 15%;
+            width: 23rem;
+            padding-right: 11%;
         }
     }
     .untref {
         @include tablet {
-            width: 86%;
+            width: 92%;
+            padding-left: 3%;
         }
     }
 }
@@ -637,21 +638,21 @@ footer {
     .unpaz {
         @include tablet {
             width: 89%;
-            padding-left: 15%;
+            padding-left: 10%;
         }
     }
 
     .unsam {
         @include tablet {
             width: 84%;
-            padding-left: 22%;
+            padding-left: 18%;
         }
     }
 
     .utn {
         @include tablet {
             width: 80%;
-            padding-left: 23%;
+            padding-left: 19%;
         }
     }
 }
