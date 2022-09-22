@@ -93,6 +93,9 @@
     align-items: center;
     .cuarto-contenido-sec {
         margin-bottom: 5rem;
+        .arriba {
+            padding-left: 5rem;
+        }
         .uba {
             width: 27rem;
             &:hover {
@@ -101,28 +104,28 @@
             }
         }
         .unlam {
-            width: 15rem;
+            width: 27rem;
             &:hover {
                 animation: bounce;
                 animation-duration: 2s;
             }
         }
         .unlp {
-            width: 14rem;
+            width: 25rem;
             &:hover {
                 animation: bounce;
                 animation-duration: 2s;
             }
         }
         .unpaz {
-            width: 23rem;
+            width: 38rem;
             &:hover {
                 animation: bounce;
                 animation-duration: 2s;
             }
         }
         .unsam {
-            width: 23rem;
+            width: 34rem;
             padding-left: 10rem;
             &:hover {
                 animation: bounce;
@@ -130,14 +133,14 @@
             }
         }
         .untref {
-            width: 20rem;
+            width: 30rem;
             &:hover {
                 animation: bounce;
                 animation-duration: 2s;
             }
         }
         .utn {
-            width: 20rem;
+            width: 27rem;
             &:hover {
                 animation: bounce;
                 animation-duration: 2s;
